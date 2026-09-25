@@ -41,8 +41,11 @@ def main():
         (ROOT/d).mkdir(exist_ok=True)
     # Inspect model references; these two complete images depict signage, not road surfaces.
     model = (TRACK/'corkscrew.acc').read_text()
-    definitions = [('hero','ATLAS',TAGLINE,'corkscrew_arbor.png'),
-                   ('engineering','ATLAS','SENSE PLAN CONTROL PROVE','kilo.png')]
+    # Both boards are each instantiated once in corkscrew.acc. The full identity
+    # belongs on the less visually busy track-name arbor; the compact proof stays
+    # independent and legible on the sponsor board.
+    definitions = [('identity', 'ATLAS', TAGLINE, 'corkscrew_arbor.png'),
+                   ('proof', '84.388', 'QUALIFIED CORKSCREW', 'kilo.png')]
     assets = []
     for name,title,subtitle,target in definitions:
         assert f'texture "{target}"' in model
@@ -55,8 +58,6 @@ def main():
             original_sha256=sha(source),modified_sha256=sha(ROOT/'modified'/target),
             dimensions=list(size),rgb_sha256=sha(ROOT/'artwork'/f'{name}.rgb'),
             model_reference_count=model.count(f'texture "{target}"')))
-    artwork('evidence','84.388','QUALIFIED CORKSCREW',(1024,256))
-    artwork('method','ATLAS','MEASURE FALSIFY IMPROVE',(1024,256))
     artwork('opening','ATLAS',TAGLINE,(2048,512))
     # A separate full track copy makes restore trivial and cannot affect the installed race.
     baseline = {}
@@ -73,10 +74,21 @@ def main():
         format_note='Corkscrew model binds PNG filenames. Modified PNGs preserve those bindings; SGI RGB exports are included but must not be renamed over PNGs or require model edits.',
         rights_note='Original track credited to Gabor Kmetyko and Andrew Sumner, GPL v2, with TORCS integration by Bernhard Wymann. Originals and full track copy remain local.')
     (ROOT/'manifest.json').write_text(json.dumps(report,indent=2))
-    sheet=Image.new('RGB',(1024,768),'#07111d')
-    for i,name in enumerate(['opening','engineering','evidence','method']):
-        im=Image.open(ROOT/'artwork'/f'{name}.png');im.thumbnail((1000,180))
-        sheet.paste(im,((1024-im.width)//2,i*192))
+    # One concise review board: final banner identity, exact texture target and
+    # recovered model reference count. This is not a racing screenshot.
+    sheet=Image.new('RGB',(1200,600),'#07111d')
+    draw=ImageDraw.Draw(sheet)
+    draw.text((40,28),'ATLAS SHOWCASE BANNER ASSIGNMENT',font=ImageFont.truetype(FONT,28),fill='white')
+    for i, asset in enumerate(assets):
+        im=Image.open(ROOT/'artwork'/f"{asset['name']}.png").convert('RGB')
+        im.thumbnail((700,190))
+        y=90+i*250
+        sheet.paste(im,(40,y))
+        label='BANNER A — IDENTITY' if asset['name']=='identity' else 'BANNER B — PROOF'
+        draw.text((780,y+20),label,font=ImageFont.truetype(FONT,24),fill='#32e6c4')
+        draw.text((780,y+72),asset['relative_target'],font=ImageFont.truetype(FONT,22),fill='white')
+        draw.text((780,y+118),f"{asset['model_reference_count']} model instance",font=ImageFont.truetype(FONT,22),fill='white')
+        draw.text((780,y+154),'showcase copy only',font=ImageFont.truetype(FONT,17),fill='#b9c7d5')
     sheet.save(ROOT/'review.png')
     print(json.dumps(dict(copy_files_changed=differences,installed_files_changed=[])))
 

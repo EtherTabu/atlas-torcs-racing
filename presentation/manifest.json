@@ -8,7 +8,7 @@
   ],
   "assets": [
     {
-      "name": "hero",
+      "name": "identity",
       "target": "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/corkscrew_arbor.png",
       "relative_target": "corkscrew_arbor.png",
       "original_sha256": "78abf232e8bac01c79237513a0200ff51711b5cb28140e680f627de158726e6e",
@@ -17,20 +17,20 @@
         512,
         128
       ],
-      "rgb_sha256": "d91c96f3723bcdb1617047a36f5a62bebc91d5631ba181c4b8ced8c9298336ff",
+      "rgb_sha256": "9519db24321faec95b562b5d42e85e01b87d8bdc70986d71944e29ca64e6f6c5",
       "model_reference_count": 1
     },
     {
-      "name": "engineering",
+      "name": "proof",
       "target": "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/kilo.png",
       "relative_target": "kilo.png",
       "original_sha256": "caee2234c6aa560d422b776e7cedb08c5bb86a32e05818e41d0e4b77cbda6c6d",
-      "modified_sha256": "cac4111e038b864b64fc4c28852551dd8eceee61e3830f1988aab933eb76a717",
+      "modified_sha256": "bef4c3cc8239188645751e6774e97b8b52de9a8327c001a726c486439664cfde",
       "dimensions": [
         512,
         256
       ],
-      "rgb_sha256": "7131f7131cc4c0c2b338d9c52105d4f1e88c97d481f4ec0a7d72f1f0a18d35cc",
+      "rgb_sha256": "7fb7d730723969aa10899b4be86fa120397fb5b0e9a77f9a83eb61742c6f0458",
       "model_reference_count": 1
     }
   ],
@@ -204,13 +204,5 @@
   },
   "primary_tagline": "HUMAN LED AI ACCELERATED RACE PROVEN",
   "format_note": "Corkscrew model binds PNG filenames. Modified PNGs preserve those bindings; SGI RGB exports are included but must not be renamed over PNGs or require model edits.",
-  "rights_note": "Original track credited to Gabor Kmetyko and Andrew Sumner, GPL v2, with TORCS integration by Bernhard Wymann. Originals and full track copy remain local.",
-  "rc1_immutable_files_verified": 83,
-  "rc1_mismatches": [],
-  "validation": {
-    "restore_test": "passed",
-    "sgi_pixel_roundtrip": "passed",
-    "installed_track_unchanged": true,
-    "simulator_runs": 0
-  }
+  "rights_note": "Original track credited to Gabor Kmetyko and Andrew Sumner, GPL v2, with TORCS integration by Bernhard Wymann. Originals and full track copy remain local."
 }

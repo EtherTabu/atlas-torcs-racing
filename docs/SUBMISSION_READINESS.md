@@ -17,7 +17,7 @@ the available evidence and require human confirmation against the official rules
 | Fastest qualified lap | Generated from the selected checkpoint; experimental Frontier laps cannot replace it without qualification. |
 | Timing and GUI qualification | Preserved PASS report; nine identical timing repeats and matching normal GUI trace for RC1. Requalify changed driving/runtime artifacts or a new final candidate. |
 | Official video | **Pending.** Capture a clean normal GUI standing-start run of the selected candidate. A clean capture without engineering overlays is our presentation recommendation, not a verified organizer rule. |
-| Source/video consistency | **Pending video.** Record selected Git commit/tag, control/parameter/map hashes and video identifier together; verify they refer to the same candidate. |
+| Source/video consistency | **Pending video.** Use the frozen [source/video record](SOURCE_VIDEO_CONSISTENCY.md); bind the actual capture to the RC1 hashes. |
 | Final commit/tag and manifest | Packaging history and manifest exist; refresh the manifest after the final packaging commit. Create no final release/tag until video consistency is checked; no claim that historical evidence was recorded from a later Git commit. Bind byte-identical source using hashes. |
 | License and attribution | Existing source notices retained. Do not apply the code's MIT license to the livery or independently licensed simulator assets. IBM requires livery inclusion for this submission; no broader artwork license is asserted. |
 | Official submission procedure | **Human confirmation required:** deadline, upload destination, video specification and any organizer rules not supplied here. |

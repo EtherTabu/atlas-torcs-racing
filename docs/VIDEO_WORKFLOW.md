@@ -39,6 +39,9 @@ an assertion about the organizer's required video format.
    the final release/tag. Publish no claim of complete submission while the checklist
    still contains unresolved organizer requirements.
 
+Use [SOURCE_VIDEO_CONSISTENCY.md](SOURCE_VIDEO_CONSISTENCY.md) to record the actual
+capture once. Do not fill it in before an official run exists.
+
 ## Presentation boundary
 
 Use original installed track textures for the official capture. Branded banner
@@ -46,3 +49,13 @@ copies under presentation/ are separate engineering-showcase material only. The
 IBM guide permits banner texture customization but does not explicitly establish
 its use in official fastest-lap footage. Do not install the showcase copy for the
 official run. No engineering overlays belong in the official capture workflow.
+
+## Source/video consistency record
+
+Before capture, record the planned packaging commit, RC1 controller/parameter/map
+and livery hashes, stock-track state and intended recorder. After capture, add the
+actual filename, SHA-256, capture-run directory, observed lap, damage, max
+abs(trackPos), video URL and visual review result. The record passes only when the
+new trace matches the frozen candidate identity and the video visibly shows the
+standing start, Corkscrew lap and completed result. A mismatch is a regression to
+investigate, never evidence to relabel.

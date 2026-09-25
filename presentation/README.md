@@ -24,9 +24,10 @@ installed model references PNG; those filenames and dimensions must be retained.
 SGI RGB exports are deliverables for a compatible texture binding, not files to
 rename over PNGs. No model/scene edit is needed or authorized here.
 
-Hero and engineering variants are assigned to the two identified textures.
-Evidence and method variants are showcase cards/unassigned banner masters; do not
-invent additional track texture replacements. The 512-pixel hero tagline is the
+Banner A — identity is assigned to `corkscrew_arbor.png`: **one recovered model
+instance**. Banner B — proof is assigned to `kilo.png`: **one recovered model
+instance**. Neither repeats excessively. These are the only primary track banners;
+the former engineering slogan is removed. The 512-pixel identity tagline is the
 largest single-line fit. Readability in motion is not yet verified; no lap was run
 for a screenshot. This remains a presentation review package, not approved footage.
 
@@ -70,12 +71,3 @@ timing-contaminated gains, and preserved matching timing and GUI qualification.
 Explore the controller, failure analysis and evidence at EtherTabu/atlas-torcs-racing.
 
 Use only after the competition submission is frozen. EtherTabu/EtherTabu is untouched.
-
-## Public package scope
-
-Original textures and the full showcase track are retained in the local laboratory,
-not copied wholesale into Git. The build script can create them from the matching
-installed track in the documented Linux environment. Restoration requires those
-locally generated originals; it restores the copy, never the installed environment.
-The two summary cards read the preserved benchmark/checkpoint values; existing
-controls and path/delta plots are reused without alteration.
