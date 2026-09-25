@@ -70,7 +70,9 @@ def main():
         content=(ROOT/'README.template.md').read_text()
         for key,value in values.items():content=content.replace('{{'+key+'}}',value)
         if '{{' in content:raise ValueError('Unresolved README field')
-        (ROOT/'README.md').write_text(content)
+        # Keep generated Markdown stable across Windows and Linux checkouts.
+        with (ROOT/'README.md').open('w', encoding='utf-8', newline='\n') as output:
+            output.write(content)
     print('Generated manifest; commit:',commit or 'not committed','submission_ready: false')
 
 

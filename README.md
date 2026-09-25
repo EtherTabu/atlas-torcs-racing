@@ -4,20 +4,25 @@
 
 Adaptive Track-Line Autonomous System
 
-**84.388 seconds.** Frozen RC1 completed a standing-start Corkscrew lap with
-**zero damage**, reproduced across **nine timing runs and a normal GUI run**.
-This repository contains the controller and evidence behind that result.
+ATLAS is an autonomous racing system built for the IBM SkillsBuild TORCS AI
+Racing Competition. The project combines human strategy, AI accelerated
+engineering, telemetry, simulation, controls development and repeatable
+validation around one objective: make the car faster without compromising the
+integrity of the result.
 
-## What makes ATLAS different
+**84.388 seconds.** ATLAS RC1 completed a standing start lap of Corkscrew with
+**zero damage**. The result reproduced across **nine timing qualification runs
+and a normal GUI TORCS run** using the same preserved controller, parameters,
+track model and assets.
 
-Human strategy set the objective, validity boundaries and promotion criteria.
-An AI coding agent implemented and tested hypotheses through accelerated simulation.
-Measured failures and invalid gains were rejected; control-loop timing faults were
-investigated rather than hidden. The final trajectory was reproduced in normal GUI
-TORCS, binding the result to preserved source, parameters, map and asset hashes.
+## Purpose
 
-The progression reflects more capable control, regional optimization and increasingly
-strict validation. Historical checkpoints do not all carry RC1's qualification level.
+ATLAS explores how an AI accelerated engineering workflow can solve a controls
+problem while keeping meaningful performance gains measurable, explainable and
+reproducible. Development combines telemetry, control design, spatial
+optimization and validation. Accelerated simulation turns hypotheses into
+measured experiments. False gains, invalid laps and timing contamination are
+rejected rather than promoted.
 
 ## Qualified performance
 
@@ -32,9 +37,9 @@ strict validation. Historical checkpoints do not all carry RC1's qualification l
 Selected evidence: **ATLAS RC1**, **84.388 s**, 9 timing repeats
 plus a normal GUI reproduction with the identical sensor/action trajectory.
 Peak speed **222.248 km/h**; maximum **|trackPos| 0.583837**; damage **0**.
-These are measurements under the documented local validity gate, not an
-organizer-issued certification. Experimental improvements are never substituted
-for qualified results.
+These measurements use the documented local validity gate. Historical checkpoints
+do not all carry RC1's qualification level. Experimental improvements are never
+substituted for qualified results.
 
 ![Recorded path and spatial time gains](evidence/path_and_delta.png)
 
@@ -42,34 +47,35 @@ for qualified results.
 
 ![Qualification summary](presentation/qualification.svg)
 
-## How it drives
+## How ATLAS drives
 
-A telemetry-derived curvature map locates each turn by distance. The planner
-builds a curvature-limited speed envelope and propagates braking constraints
-backward. Spatial line targets guide heading and lateral-position feedback;
-curvature feedforward and steering-rate limits anticipate the road. Wheel-speed
-feedback manages traction and braking, and a simulation-time clutch regulator
+A telemetry derived curvature map locates each turn by distance. The planner
+builds a curvature limited speed envelope and propagates braking constraints
+backward. Spatial line targets guide heading and lateral position feedback.
+Curvature feedforward and steering rate limits anticipate the road. Wheel speed
+feedback manages traction and braking, and a simulation time clutch regulator
 handles the standing start. The selected controller does not use a forward
-acceleration pass: tested additions must earn their place through valid lap time.
+acceleration pass because tested additions must earn their place through valid lap time.
 
 Live sensors anchor the plan. Knowledge of the fixed circuit does not replace
-feedback. Car-model dynamics, track geometry and simulator physics are untouched.
+feedback. Car model dynamics, track geometry and simulator physics are untouched.
 See [architecture](docs/ARCHITECTURE.md) and [recorded controls](evidence/controls.png).
 
-## How it was engineered
+## Engineering strategy
 
-Accelerated headless TORCS screened hypotheses cheaply. Each retained experiment
-bound parameters and source hashes to complete sensor/action evidence. Spatial
-lap deltas identified where time was gained or lost. Invalid laps and rejected
-hypotheses were retained locally rather than promoted as records.
+Accelerated headless TORCS screened hypotheses efficiently. Each retained
+experiment bound parameters and source hashes to complete sensor and action
+evidence. Spatial lap deltas identified where time was gained or lost. The
+engineering process combined human strategy with AI accelerated experimentation
+and maintained a clear promotion path from exploratory lap to repeatable result.
 
-The engineering ladder separates single exploratory laps, repeated headless
-confirmation, and expensive timing/GUI qualification. A later Frontier probe
-tested smooth line interpolation and forward acceleration planning in ten runs;
-it produced no challenger to RC1. This repository contains the qualified racer
-and representative audit evidence, not the raw experimental laboratory.
+The promotion ladder separates exploratory laps, repeated headless confirmation
+and timing and GUI qualification. A later Frontier probe tested smooth line
+interpolation and forward acceleration planning in ten runs. It produced no
+challenger to RC1. This repository contains the qualified racer and representative
+audit evidence, not the raw experimental laboratory.
 
-## Timing is part of correctness
+## Timing and control integrity
 
 SCR has an approximately 10 ms response deadline. A late response can hold the
 previous action and subsequently be consumed against a newer sensor state.
@@ -125,9 +131,9 @@ listed in [the fixture inventory](evidence/fixture_inventory.json).
 
 `python tools/generate_release.py` verifies selected source hashes and generates
 this README plus `dist/submission_manifest.json`. The manifest records the Git
-revision at generation time. Final video: **pending — not submission-complete**.
+revision at generation time. Final video: **pending â€” not submission-complete**.
 
-The release is not submission-complete until the
+The release is not complete until the
 [submission-readiness checklist](docs/SUBMISSION_READINESS.md) is satisfied.
 The packaged livery is an unchanged copy of the locally qualified asset; its
 identity is established by IBM competition documentation. IBM explicitly requires
