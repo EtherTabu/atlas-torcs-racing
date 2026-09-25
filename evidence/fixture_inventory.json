@@ -1,0 +1,38 @@
+{
+  "purpose": "Six selected traces support exact offline replay, measured GUI jitter, reference integrity and RC1 evidence. The raw laboratory is excluded.",
+  "fixtures": {
+    "20260924T175529_575096Z_mapped-v2": [
+      "packets.jsonl.gz",
+      "parameters.json",
+      "manifest.json",
+      "summary.json",
+      "analysis.json"
+    ],
+    "20260924T175352_782702Z_mapped-v2": [
+      "packets.jsonl.gz"
+    ],
+    "20260924T182501_227244Z_experimental-v3": [
+      "packets.jsonl.gz",
+      "parameters.json"
+    ],
+    "20260924T190741_134214Z_experimental-v3": [
+      "packets.jsonl.gz"
+    ],
+    "20260925T010713_126466Z_atlas-v1": [
+      "packets.jsonl.gz",
+      "parameters.json",
+      "manifest.json",
+      "summary.json",
+      "analysis.json",
+      "race.xml"
+    ],
+    "20260925T010629_515431Z_atlas-v1": [
+      "packets.jsonl.gz",
+      "parameters.json",
+      "manifest.json",
+      "summary.json",
+      "analysis.json",
+      "race.xml"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+name: Offline qualification
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  replay-and-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - name: Compile all source and tooling
+        run: python -m compileall -q .
+      - name: Authoritative offline gate
+        run: python qualify_atlas.py --offline
+      - name: Check release evidence generation
+        run: python tools/generate_release.py --manifest-only
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: offline-evidence
+          path: |
+            qualification_reports/
+            dist/submission_manifest.json

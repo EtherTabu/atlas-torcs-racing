@@ -1,0 +1,24 @@
+__pycache__/
+*.py[cod]
+qualification_reports/
+telemetry/
+campaigns/
+artifacts/
+dist/
+# Include only deliberately curated fixture directories.
+experiments/*
+!experiments/20260924T175352_782702Z_mapped-v2/
+!experiments/20260924T175529_575096Z_mapped-v2/
+!experiments/20260924T182501_227244Z_experimental-v3/
+!experiments/20260924T190741_134214Z_experimental-v3/
+!experiments/20260925T010629_515431Z_atlas-v1/
+!experiments/20260925T010713_126466Z_atlas-v1/
+
+experiments/*/source/
+experiments/*/torcs_local/
+experiments/*/live/
+experiments/*/runtime_maps.txt
+experiments/*/simulator.log
+experiments/*/client_timing.json
+experiments/*/telemetry_*.csv
+experiments/*/simulation_telemetry.csv

@@ -1,0 +1,30 @@
+{
+  "lateral_accel": 30,
+  "braking_accel": 12,
+  "max_speed": 250,
+  "understeer": 0.02,
+  "traction_slip": 0.1,
+  "upshift_rpm": 8800,
+  "zones": [
+    [
+      400,
+      560,
+      24
+    ],
+    [
+      720,
+      900,
+      24
+    ],
+    [
+      2600,
+      2810,
+      24
+    ],
+    [
+      3180,
+      3320,
+      24
+    ]
+  ]
+}

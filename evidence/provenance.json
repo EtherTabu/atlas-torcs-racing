@@ -1,0 +1,8 @@
+{
+  "run": "20260925T010629_515431Z_atlas-v1",
+  "trajectory_sha256": "1f0d7f806201920aa2979450588ccf61f4b3d624dce0aecb10bc5ba8d3c3ef60",
+  "lap_time_s": 84.388,
+  "reference": "20260924T175529_575096Z_mapped-v2",
+  "local_validity": "passed",
+  "note": "Figures do not independently establish timing or GUI qualification."
+}

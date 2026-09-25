@@ -1,0 +1,27 @@
+{
+  "packets": 4572,
+  "distance_m": 3618.77,
+  "final_lap_time": 0.00400244,
+  "gear_command_changes": 11,
+  "damage_increase": 0.0,
+  "damage_present_all": true,
+  "max_abs_trackPos": 0.496195,
+  "max_abs_angle": 0.266671,
+  "max_speed_kmh": 214.604,
+  "steering_saturation_packets": 66,
+  "brake_packets": 613,
+  "standing_start_speed_kmh": -0.0187056,
+  "trajectory_sha256": "3f5cc3d5bf53595fdfa3d805ed252ddef278b3601cb01b2eae87622e0fdc5b57",
+  "note": "No official validity flag supplied; trackPos is car-center position, not tire clearance.",
+  "validity_checks": {
+    "completed": true,
+    "standing_start": true,
+    "no_damage": true,
+    "conservative_track_margin": true,
+    "all_track_sensors_on_road": true,
+    "contiguous_records": true,
+    "installed_assets_unchanged": true
+  },
+  "local_validity": "passed",
+  "lap_time_s": 95.31
+}

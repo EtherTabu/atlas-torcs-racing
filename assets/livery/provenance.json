@@ -1,0 +1,8 @@
+{
+  "source": "Installed SCR driver index 0, car1-trb1.rgb",
+  "sha256": "05bc6e7f24528cc66ca01358ec9ba78427b5ed413d7f5471c2e775bb2de0987c",
+  "modified": false,
+  "driver": "scr_server 1",
+  "organizer_approval": "Needs confirmation against official competition package",
+  "redistribution_license": "Not established from available project evidence"
+}

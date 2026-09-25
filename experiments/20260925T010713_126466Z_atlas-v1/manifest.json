@@ -1,0 +1,854 @@
+{
+  "run_id": "20260925T010713_126466Z_atlas-v1",
+  "controller": "atlas-v1",
+  "arguments": {
+    "controller": "atlas-v1",
+    "params": "atlas_params.json",
+    "max_steps": 20000,
+    "control_delay_ms": 0,
+    "observe_server": false,
+    "buffer_logging": true,
+    "gui": true,
+    "delay_trace": null,
+    "delay_seed": 1,
+    "post_send_stall_ms": 0,
+    "async_logging": true
+  },
+  "source_sha256": {
+    "analyze_run.py": "cd926fd2b51afc82432cadd2a90ff824589cacd0d2f2506d21a0bf82a2e2afb0",
+    "analyze_timing.py": "e7a0bb53d62889c9225e7bfc189a26e48fe1b0c9be28c13889a3ff95ff6c21cc",
+    "async_telemetry.py": "10a12eebc50904a7c863e09f9a60ae1dbe0e7fc6923a58d54d8c75862822f0fc",
+    "atlas_1000_params.json": "a80152d94651cd90ba10bd4f39fd0397fd81b8d7e903ea2168e9abed2bbd5eee",
+    "atlas_1930_params.json": "a08ca55d5145b5f1854853b64d39761b2523e877b102991bef788a61cf689da6",
+    "atlas_85_212_incumbent_params.json": "15f9d95d2c6873f7f45ff220cf4f418ed151c96596239a92dde3e54d6ec8778f",
+    "atlas_brake_params.json": "33ff6a214ed176490066de0846b4517c962ac59e9a0a7741a7f7b6a5440c9fbe",
+    "atlas_controller.py": "3f04a590c1ce72d1ff29adb6b4dd73a6bd649eac31ce3764e25ce7fa59784be5",
+    "atlas_entry_params.json": "28de3b6456d924c1e2ea2ba2ab4d2492b8ebc471c5f0c49c78435a4421487c71",
+    "atlas_first_optimized_params.json": "fb5d09bd1310b730e86b6ba42b65be06e3b85d6c3e45fb6b3e78c31ea114bb93",
+    "atlas_hairpin_optimized_params.json": "8f80573c60c39b3ed9ba8db872937443445ff2f7a3fae7ff94a25ed5c14a24c1",
+    "atlas_hairpin_params.json": "eabffff6649dac4d33338c1cfc90016a7b45d1c47c7236dc03ba1427e87aefa0",
+    "atlas_incumbent_params.json": "b21dd1390584c4d99d3109d9b47334cd3eca01024a847ee3509e021d608de816",
+    "atlas_launch_params.json": "54cea09bb47620a966f5e9a0fffa2f6d1f816e4796a729dc79d66014e536002d",
+    "atlas_launch_refined_params.json": "408fb78980be9a58238405ae881943668ee960652c6653ce7cb78a901dc90668",
+    "atlas_optimized_params.json": "62f5918cdfea5588864450af22ec0336d5c5588b2976238353ccd9a84302850b",
+    "atlas_params.json": "c6ac84014112edc203db0c5995e439a78af07137601ea3152bb9cedb6cad72a9",
+    "atlas_rpm_params.json": "408fb78980be9a58238405ae881943668ee960652c6653ce7cb78a901dc90668",
+    "atlas_screened_params.json": "a6f6ab2c5fa7ef93f4d9cc4a8e69e3a3260b177c8b944bb158d6c68368948919",
+    "atlas_slide_params.json": "0cdcc103e74fe9df6d0ba0c5c006852a9cbd363f7738b89db85dbec4cb801002",
+    "atlas_spatial_metrics.py": "ce7f646d64fcb01bc1252c456857d0ee4bef17f62b301ff8079f8eaefd172d1d",
+    "atlas_tracking_params.json": "9e282f227041fbd7fdb005811d2356e19f4ee69ec693e76a8cc32f3ce287cd4a",
+    "atlas_traction_params.json": "fb5d09bd1310b730e86b6ba42b65be06e3b85d6c3e45fb6b3e78c31ea114bb93",
+    "atlas_velocity_params.json": "408fb78980be9a58238405ae881943668ee960652c6653ce7cb78a901dc90668",
+    "audit_experiment.py": "9ee4f78fffd99da9d2a9ad415016b4ec1b2ec30d05c43df9ef8f4c24c9757cb4",
+    "best_params.json": "b41215c16afd04041f28f35f2742999495ee0ad0d5fae006192d10f31bf0e9a5",
+    "build_track_model.py": "49986a71e0c0dac58eed72a4bf90b3decdc2a136bf9c2676c0350f9162b55373",
+    "candidate_corner_params.json": "19a5d80d527efe5a3333823a1ec3ab50b9fd3c4f24764993b33ed3d7e195952f",
+    "candidate_deep_params.json": "b21dd1390584c4d99d3109d9b47334cd3eca01024a847ee3509e021d608de816",
+    "candidate_refined_params.json": "ab1424fde3cc4c0e3eaa957901e785655f4ce60139775f00e2ea862b7b6325c5",
+    "candidate_v3_params.json": "e6039f8653e4838d19bb8249f1a9dedc10b63516e673088449642cb94fe6205e",
+    "candidate_v3_successor_params.json": "4f0f4373faf0d0b3974da4c6df317a4f6faa7f3bacf1da67a81df73da5afb174",
+    "competition_client.py": "8b6e224005fc53ff90967d42bc16999a0508cb6ec3df14f706fa604ec8bf8b3c",
+    "example_experiment.py": "8050b6f7668cbc633e2e6be399f36ae2503e6a9891ca1878df8a592e74a996c5",
+    "experimental_controller.py": "5e8dab1f952bc34bb2d3993dbc8d95364dfa30f14e74154eefcbb325ba612a61",
+    "gym_torcs.py": "0fde7fdb7e09e3226511e233b749fec5b04f1e2f49097fff90217e70e5b41970",
+    "jmcncarai.py": "5c3655560d34a9c444d34c8821c5a052cde5276d5d4d88857751e71498ce1a9b",
+    "lap_delta.py": "7544bb84aadf2376a961b054e9df5ae3b218aeed21a89c85337546db5ed97915",
+    "mapped_controller.py": "938bbc334314af3738b7131bf456e7c20297769549f97adf25156bf29dea00cd",
+    "optimize_atlas_line.py": "d6f2fa5c62bdc2dda0aa4582b590c6cac06f145cbe878dee6aba849017ceecff",
+    "optimize_atlas_region.py": "fb19dcbddeaa3fa78a69a558e447ea52c09063f0970c48100076bf46ae4e2d6f",
+    "performance_index.json": "ab2cdba6f1bad2b041610827691fe5ce9af233b791c8ce5731a412e5fcaa6ccb",
+    "plot_atlas_evidence.py": "142ec47bc104a19f00e784f4aa3a17294251c27764febac449a4b699eb1fd62b",
+    "qualify_atlas.py": "a7f33d28f485cbe9acf03850e6e67da19359d5b4130130552b770e562af738e4",
+    "qualify_timing.py": "6d78f2dd7b3a96e3de2d55ac6f4fd11a312880362f5c81dc15f6c6817db5d0b8",
+    "race_experiment.py": "9c47b23cc2643378e2e472233902799968886262d69a0e65a3e3475edfaffd28",
+    "racing_controller.py": "7594abd158d50c51f4a1fc1276d292fcb3dcc82643c2480f7c646d7e269f7434",
+    "sample_agent.py": "738716b358894d05804bc3107970fc73d0c8b013c7276117a2e51ce8e3f773b3",
+    "scratch_atlas_params.json": "240578038a5fdb62f8bd7583b0502ed02046713f43555ad0dfc5ffb0fa6149d5",
+    "search_atlas_1000.py": "eaa42413faa24e5ab6f46734ed0978955f30d7d8fc209a0d74c4c39fd3707053",
+    "search_atlas_1930.py": "243f098fb25fba580a279d12188f52ed09af186af73458b92e1a18b792ae4a7b",
+    "search_atlas_remaining.py": "fd042a7d48234d8b6afb6c0d76e60293fba1198f9a871848c010bf47da5a5210",
+    "search_atlas_traction.py": "99dba8754389112412a525d57d33c0cd62c95678f8ec4284e5e55d6b0597adbf",
+    "search_corner_lines.py": "f9bed81a5506bb57aca1065735ed6975a51239e21d1824219bb210162b6413ec",
+    "search_performance.py": "5ec6a42af141942ec65c33b501404ecce610ff153cc2f2b7e6fd666618af30b9",
+    "search_timing_performance.py": "984d9f18cd5e4a9225b29bdbb9ac6c620ccd7aa1438215cb0c6ee24bf43a09cd",
+    "snakeoil3_gym.py": "6fe87efcd6c772152f8910476c4bfe9ce682f8b71adaf640072e292c0075bdcc",
+    "snakeoil3_jm2.py": "02b61f157fefbfbe87165aaf0784b0484f4c63603a313cb8087dac2d8bba2bcc",
+    "spatial_analysis.py": "a4005104a6db53bc568bc26956f5060de305926af2a72fc2747b654f33a9c4b9",
+    "test_atlas_controller.py": "aba82577ef039216fe378dd4b51ef745b35dccbb798c7ea87e9e7cc446d14c4f",
+    "test_mapped_controller.py": "62f4f5aaff6e302b22ffe065300bcfde782b4a4c6cae70303a71cee5c6af9bbd",
+    "test_racing_controller.py": "5e630e56aef622b1cce9a9b0c6ab209d947629736418d3441a843f39d3e32b2f",
+    "test_spatial_candidate.py": "f601cba2ff5a75a190dcd049967250117586bf661535d43551ae998d3f2915ad",
+    "test_timing_interface.py": "778c261961204656e552acd3f8fac1289ea5b7f117b24e91503bb8d1300edc70",
+    "test_torcs_telemetry.py": "cb7cb979417d0abcad337b01a3e39fe011e281029de42a9f7cb85dcc72ac2f7c",
+    "timing_experiment.py": "9d4d3825ee3e2feda2e3091f7f6695b388dfc3cc9c9ce42b47fe48bbb538ed20",
+    "torcs_jm_par.py": "a2c08034e579e8b11566699813c258b2e4ddbf08af96f5c1260c0ef790cbf286",
+    "torcs_jm_par_backup_20260924_130837_384.py": "b00c37928a479ad04228b9c7bd9a55a91864e6d863a47d057f4a64447fc0a27e",
+    "torcs_jm_par_steer8.py": "0a3e5dec66fdd1cefe7dcb68f60678774e6d3088c0f869d0dbdca7bd9722e5a0",
+    "torcs_telemetry.py": "15ebe9884510bef17a9241ae8633d96e5cde9a4e10665c05c2dbc7b389079836",
+    "track_model.json": "eea1b611a1d99a8921140abe4568e7985e2e0c6f726c7b62c151d5145294917f",
+    "trajectory_controller.py": "e521b1f32be9e3c3197eb47ba35f72afcfc2669f4d32edc77e6cf82c3b141e3c",
+    "trial_params.json": "07a076393d7b78f8ba46d458567106b1f45d8f81b06da06c9890535b6ea12cc2",
+    "trial_timing_params.json": "ea543071ac26b74441426af163e272eccac4c541e6af717047f51a1a78c61f62"
+  },
+  "parameters": {
+    "lateral_accel": 46,
+    "braking_accel": 12,
+    "max_speed": 250,
+    "understeer": 0.02,
+    "traction_slip": 0.2,
+    "upshift_rpm": 9500,
+    "zones": [
+      [
+        850,
+        900,
+        24
+      ],
+      [
+        2600,
+        2640,
+        24
+      ],
+      [
+        700,
+        850,
+        26
+      ],
+      [
+        1430,
+        1465,
+        30
+      ],
+      [
+        1510,
+        1640,
+        30
+      ],
+      [
+        0,
+        350,
+        30
+      ],
+      [
+        580,
+        950,
+        30
+      ],
+      [
+        1120,
+        1465,
+        30
+      ],
+      [
+        1510,
+        1860,
+        30
+      ],
+      [
+        2010,
+        2340,
+        30
+      ],
+      [
+        2540,
+        2640,
+        30
+      ],
+      [
+        2820,
+        2900,
+        30
+      ],
+      [
+        3060,
+        3180,
+        30
+      ],
+      [
+        3320,
+        3610,
+        30
+      ],
+      [
+        2640,
+        2820,
+        28
+      ],
+      [
+        0,
+        350,
+        34
+      ],
+      [
+        580,
+        950,
+        34
+      ],
+      [
+        1120,
+        1465,
+        34
+      ],
+      [
+        1510,
+        1860,
+        34
+      ],
+      [
+        2010,
+        2340,
+        34
+      ],
+      [
+        2540,
+        2900,
+        34
+      ],
+      [
+        3060,
+        3180,
+        34
+      ],
+      [
+        3320,
+        3610,
+        34
+      ],
+      [
+        2900,
+        3060,
+        38
+      ],
+      [
+        0,
+        350,
+        42
+      ],
+      [
+        580,
+        950,
+        42
+      ],
+      [
+        1120,
+        1465,
+        42
+      ],
+      [
+        1510,
+        1860,
+        42
+      ],
+      [
+        2010,
+        2340,
+        42
+      ],
+      [
+        2540,
+        3180,
+        42
+      ],
+      [
+        3320,
+        3610,
+        42
+      ],
+      [
+        1465,
+        1510,
+        28
+      ],
+      [
+        2340,
+        2540,
+        28.782
+      ],
+      [
+        350,
+        580,
+        24.973
+      ],
+      [
+        3180,
+        3320,
+        25.705
+      ],
+      [
+        1860,
+        2010,
+        46
+      ],
+      [
+        0,
+        950,
+        44
+      ],
+      [
+        1120,
+        1860,
+        44
+      ],
+      [
+        2010,
+        3610,
+        44
+      ],
+      [
+        950,
+        1120,
+        32
+      ]
+    ],
+    "downshift_rpm": 5800,
+    "line_points": [
+      [
+        330,
+        0.0
+      ],
+      [
+        400,
+        -0.3
+      ],
+      [
+        436.438,
+        0.289
+      ],
+      [
+        500.056,
+        0.499
+      ],
+      [
+        560,
+        -0.3
+      ],
+      [
+        590,
+        0.0
+      ],
+      [
+        650,
+        0.0
+      ],
+      [
+        720,
+        0.45
+      ],
+      [
+        770,
+        -0.45
+      ],
+      [
+        825,
+        0.45
+      ],
+      [
+        870,
+        0.0
+      ],
+      [
+        900,
+        0
+      ],
+      [
+        975,
+        0.3
+      ],
+      [
+        1030,
+        -0.3
+      ],
+      [
+        1100,
+        0.3
+      ],
+      [
+        1170,
+        0
+      ],
+      [
+        1370,
+        0.0
+      ],
+      [
+        1470,
+        -0.3
+      ],
+      [
+        1530,
+        0.3
+      ],
+      [
+        1600,
+        -0.3
+      ],
+      [
+        1670,
+        0.0
+      ],
+      [
+        1800,
+        0.0
+      ],
+      [
+        1890,
+        -0.15
+      ],
+      [
+        1930,
+        0.15
+      ],
+      [
+        1980,
+        -0.15
+      ],
+      [
+        2050,
+        0.0
+      ],
+      [
+        2340,
+        0
+      ],
+      [
+        2410,
+        -0.3
+      ],
+      [
+        2443.796,
+        0.399
+      ],
+      [
+        2490.573,
+        -0.42
+      ],
+      [
+        2560,
+        0.3
+      ],
+      [
+        2580,
+        0.0
+      ],
+      [
+        2640,
+        -0.45
+      ],
+      [
+        2710,
+        0.45
+      ],
+      [
+        2810,
+        -0.45
+      ],
+      [
+        2850,
+        0.0
+      ],
+      [
+        2920,
+        0.45
+      ],
+      [
+        2980,
+        -0.45
+      ],
+      [
+        3040,
+        0.45
+      ],
+      [
+        3090,
+        0.0
+      ],
+      [
+        3100,
+        0
+      ],
+      [
+        3210,
+        -0.35
+      ],
+      [
+        3270.345,
+        0.46
+      ],
+      [
+        3302.226,
+        -0.22
+      ],
+      [
+        3400,
+        0
+      ]
+    ],
+    "local_controls": [
+      [
+        3150,
+        3340,
+        {
+          "min_gear": 2
+        }
+      ],
+      [
+        2580,
+        2830,
+        {
+          "lateral_damping": 0
+        }
+      ],
+      [
+        3150,
+        3350,
+        {
+          "steer_rate": 5
+        }
+      ],
+      [
+        900,
+        1220,
+        {
+          "lateral_damping": 0.01,
+          "preview_m": 6
+        }
+      ],
+      [
+        1380,
+        1670,
+        {
+          "preview_m": 10
+        }
+      ],
+      [
+        1800,
+        2080,
+        {
+          "preview_m": 10,
+          "understeer": 0.01
+        }
+      ],
+      [
+        650,
+        870,
+        {
+          "preview_m": 6,
+          "understeer": 0.01
+        }
+      ],
+      [
+        2580,
+        2830,
+        {
+          "preview_m": 10,
+          "understeer": 0.015
+        }
+      ],
+      [
+        2860,
+        3100,
+        {
+          "preview_m": 10,
+          "understeer": 0.015
+        }
+      ],
+      [
+        2150,
+        2410,
+        {
+          "upshift_rpm": 9800
+        }
+      ]
+    ],
+    "line_heading_gain": 1.1,
+    "braking_zones": [
+      [
+        280,
+        545,
+        18
+      ],
+      [
+        2250,
+        2520,
+        14
+      ],
+      [
+        3050,
+        3290,
+        18
+      ],
+      [
+        280,
+        545,
+        24
+      ],
+      [
+        2250,
+        2520,
+        12.911
+      ],
+      [
+        280,
+        545,
+        20.11
+      ],
+      [
+        3050,
+        3290,
+        20.111
+      ]
+    ],
+    "launch_clutch": 0.7,
+    "launch_duration": 3,
+    "launch_rpm": 3500,
+    "launch_gain": 0.0001,
+    "position_gain": 0.65,
+    "heading_gain": 3
+  },
+  "assets_sha256": {
+    "/usr/local/torcs/share/games/torcs/cars/car1-trb1/car1-trb1.xml": "a075b54b12f6b8792e0d60a0b66aadf250d1281448bc8310477d1f2b92d30cfc",
+    "/usr/local/torcs/share/games/torcs/cars/car1-trb1/tex-wheel.rgb": "df6b24d3844de0dc04b8704dc03c61a22e7f686e05d1fee4919f8f66b17b1cbe",
+    "/usr/local/torcs/share/games/torcs/cars/car1-trb1/car1-trb1.rgb": "3f3acef259ae655baf35c621a36837839eb9307dbc6cfedd8f406f0be0ca6174",
+    "/usr/local/torcs/share/games/torcs/cars/car1-trb1/car1-trb1.acc": "c88df382eaf78a95f23b31ee5fc6f5a144c59a16591eeaafba0b39f25212b262",
+    "/usr/local/torcs/share/games/torcs/cars/car1-trb1/shadow.rgb": "9eb08472ca8518d92e2fc4b4901897804384bd0ab1bd5812e43ea45f4769f04a",
+    "/usr/local/torcs/share/games/torcs/cars/car1-trb1/readme.txt": "0d5a7b03052ca7842f372d338c2be400708d0fab2981c72777fd04934a884d0a",
+    "/usr/local/torcs/share/games/torcs/drivers/scr_server/scr_server.xml": "999382bebefda329472831f11abfc24bdaa246220c6f9d28c3916a04d49dd396",
+    "/usr/local/torcs/share/games/torcs/drivers/scr_server/6/default.xml": "2c749c9966384666687dd93fc224a06dde988f076d097f4ff4c8d2e028b015f9",
+    "/usr/local/torcs/share/games/torcs/drivers/scr_server/6/car1-trb1.rgb": "05bc6e7f24528cc66ca01358ec9ba78427b5ed413d7f5471c2e775bb2de0987c",
+    "/usr/local/torcs/share/games/torcs/drivers/scr_server/4/default.xml": "2c749c9966384666687dd93fc224a06dde988f076d097f4ff4c8d2e028b015f9",
+    "/usr/local/torcs/share/games/torcs/drivers/scr_server/4/car1-trb1.rgb": "05bc6e7f24528cc66ca01358ec9ba78427b5ed413d7f5471c2e775bb2de0987c",
+    "/usr/local/torcs/share/games/torcs/drivers/scr_server/2/default.xml": "2c749c9966384666687dd93fc224a06dde988f076d097f4ff4c8d2e028b015f9",
+    "/usr/local/torcs/share/games/torcs/drivers/scr_server/2/car1-trb1.rgb": "05bc6e7f24528cc66ca01358ec9ba78427b5ed413d7f5471c2e775bb2de0987c",
+    "/usr/local/torcs/share/games/torcs/drivers/scr_server/5/default.xml": "2c749c9966384666687dd93fc224a06dde988f076d097f4ff4c8d2e028b015f9",
+    "/usr/local/torcs/share/games/torcs/drivers/scr_server/5/car1-trb1.rgb": "05bc6e7f24528cc66ca01358ec9ba78427b5ed413d7f5471c2e775bb2de0987c",
+    "/usr/local/torcs/share/games/torcs/drivers/scr_server/3/default.xml": "2c749c9966384666687dd93fc224a06dde988f076d097f4ff4c8d2e028b015f9",
+    "/usr/local/torcs/share/games/torcs/drivers/scr_server/3/car1-trb1.rgb": "05bc6e7f24528cc66ca01358ec9ba78427b5ed413d7f5471c2e775bb2de0987c",
+    "/usr/local/torcs/share/games/torcs/drivers/scr_server/1/default.xml": "2c749c9966384666687dd93fc224a06dde988f076d097f4ff4c8d2e028b015f9",
+    "/usr/local/torcs/share/games/torcs/drivers/scr_server/1/car1-trb1.rgb": "05bc6e7f24528cc66ca01358ec9ba78427b5ed413d7f5471c2e775bb2de0987c",
+    "/usr/local/torcs/share/games/torcs/drivers/scr_server/0/default.xml": "2c749c9966384666687dd93fc224a06dde988f076d097f4ff4c8d2e028b015f9",
+    "/usr/local/torcs/share/games/torcs/drivers/scr_server/0/car1-trb1.rgb": "05bc6e7f24528cc66ca01358ec9ba78427b5ed413d7f5471c2e775bb2de0987c",
+    "/usr/local/torcs/share/games/torcs/drivers/scr_server/9/default.xml": "2c749c9966384666687dd93fc224a06dde988f076d097f4ff4c8d2e028b015f9",
+    "/usr/local/torcs/share/games/torcs/drivers/scr_server/9/car1-trb1.rgb": "05bc6e7f24528cc66ca01358ec9ba78427b5ed413d7f5471c2e775bb2de0987c",
+    "/usr/local/torcs/share/games/torcs/drivers/scr_server/8/default.xml": "2c749c9966384666687dd93fc224a06dde988f076d097f4ff4c8d2e028b015f9",
+    "/usr/local/torcs/share/games/torcs/drivers/scr_server/8/car1-trb1.rgb": "05bc6e7f24528cc66ca01358ec9ba78427b5ed413d7f5471c2e775bb2de0987c",
+    "/usr/local/torcs/share/games/torcs/drivers/scr_server/7/default.xml": "2c749c9966384666687dd93fc224a06dde988f076d097f4ff4c8d2e028b015f9",
+    "/usr/local/torcs/share/games/torcs/drivers/scr_server/7/car1-trb1.rgb": "05bc6e7f24528cc66ca01358ec9ba78427b5ed413d7f5471c2e775bb2de0987c",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/BUS.png": "0cfdbf23929eb2f4eafa53d6dc3929aa31b97699163eefdd9d471d84f5fd394e",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/RV2.png": "89f1be8de804e70a67924da908ba40a13cc149fa148bdd05b1ec142a0ebfaf51",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/CAMPER3.png": "64792a296552918f07cba511e1e5780a1a320f6652df7ba113fd3a620f3e94c6",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/BOX1.png": "091bc9d1d748eb135859efca8e647cc7a5088675643ab762124ef748dae33b4e",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/treeRNS4.png": "c876e8935930c5f144b01e38ddc0ce38d0584fbd01f21bd2cbf14ab4d18e0d2f",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/GARAGE2.png": "e059b8e837aeadeae4d05ff1403355e7291c507c5b405dd503c0b2412cf170f9",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/corkscrew_arbor.png": "78abf232e8bac01c79237513a0200ff51711b5cb28140e680f627de158726e6e",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/TRIB1.png": "11bff56b1af6cfbf2fbd7c9161213e506d3d6b28968e4410331f372632f68992",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/TRUCK01.png": "d9a128d7a6a1bb0a276cb6bf4101f84ad68b80cf146bbf3ef5c6bf08858efc65",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/BAR2.png": "51f947c0339b3ca53598247434983890b6e62575544d524ecc1844a45681f9fa",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/RV6.png": "020a2451258eb9da9e66413347eeb7e11266ec9b0a9a24ee1c3d8ba2096d5efd",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/treeRNS3.png": "5334c3e2572101f33b19ab54f5959bd11fbff1adf50f23b2dd9043a213f2325b",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/asphalt-hs.png": "e176dddc021deb2559b023dca3beeabfa002fb5204ce92acb6b99f8c7bf66803",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/CAR05.png": "f35dadc426260a954a1a86bcad29d6917d852c7bec8ece916ea7455ffbf75202",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/TRAVE1.png": "6e4095f830d3d7c40b9ea86a406320783e62e5a484742166f0cfcfba5f073bb9",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/TENTPEP1.png": "825524ac4396a287559bd191ba81b94847839b88c3a646fd1fc5af5c65bf9650",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/tree_n.png": "9a3084c66088530074f70af48f3280bac9ca4f6449202a8b2328398feb4486cd",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/CAMPER4.png": "30c09562ab6e3c4783073f77285ae67a91c27bfafbcd10494f29908219a04c52",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/ROAD7.png": "2869b57cadfab07e263c97862698bbc55031cbbc96b52d23406e82b1deffea5b",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/TRUCK13.png": "214741b33ea40a4cbd674220c2c704d80cb91b026ca1ee82d625bac3ed22e4cd",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/treeRNS5.png": "82932e634a25c1d7595ac8a12dc72777f2eac4f3719319c1f193c0ee1bb0b45b",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/CROWD5.png": "cdb9374aebc0fcf4fd660af82abb4715d9a58158b97e56f6374201e42aba1254",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/grassct.png": "9fff9f78daed9affe3cce1124afbd56a71e6007e8ef75aa6d1abd6888f09b884",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/CAR06.png": "1a2a69e41a486802ecdbc75214f756f1afac546239357cc1ed926f50548a1e4c",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/TRUCK07.png": "f80577951d2e28db4e8e33baf04a8621c85044d269d6b9f213cf7375bd2b5c80",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/TRIB5.png": "35000259960ed683a93fcef5f2cad954cd86b0eba0d350a8e93eae1569e21f6f",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/concrete2.png": "3686bc9e89bf47c05a6931a90d096b8ea3b88ec357d5b00205252e86a40b916d",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/treeSC_n.png": "ba0cd7746c9e9ec757bdad0fc2a6f18b4ff574950415942004048526d6a1da63",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/lgtyel.png": "d27a78fe1268fb675eb480351f71b6aa764ac82865fcf7d48fb321af967a16c4",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/MASE01.png": "1b1e4b73cf63b9e45dc7441bc38b36e5828d9774370b3a6901a4676ba8f98b01",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/tr-barrier-arbor-fence_n.png": "e381017eb2a17d11e362cbaeecba904a069eee3ea0e84007da4524985c2cb0ae",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/tr-curb-wb-l.png": "0dc6ac64359ab1a465d5c7901e91b51529cbc99434d220ddf0f9a8580d248f48",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/FURGONE.png": "b995115e84baa447aee3ca2c040b472919bf8faa2f518b07ce6c3fd3db0f0a42",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/GARAGE1.png": "8fac0388925e7268947333330c18070da0ae685cfb98979cfb9eb2e406959c28",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/TRAVE4.png": "3310c2994589fbdc159394bc11dba06e0e3308d032acbb2401591953b1b59e53",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/CASOT2.png": "b84b48d71a6ffb75c9612b59efe32f1e0d02e95707f2634420d160d0df550c1d",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/TRIB4.png": "53b31162ff77f080cbb6f08ebb317b24a16ed559ba735425ba5d5218adc26826",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/64PASS9.png": "7588cf53a287cf1f09408d0a3eb81b790bebd8e0fcee2ca17e546ecb2682a2d5",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/back-sign.png": "c8ae19aaf799320680f94336eff7a4f43f406cda0be10f0dc9d798caa52acee1",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/01.png": "f8080cb9067097fecd5a4097c1cc786b934b9d205c6b6d234228199077308fb3",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/TRUCK06.png": "6822e5c2cf647eff99e9ec8b7e42bda4ebf09d40d2d9a007788ebb0d33ae1f27",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/grassclf.png": "89ecb79622826a2958e2e5933360f0402cd8c974e56f4ba14ff77feb76a12b74",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/tr-curb-wb-r.png": "e907492f7fe1ecb0153ac7435c3a2c6a98b8868060a3bc600b506ce3061e96a6",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/shadow2.rgb": "429b9d51d568493b842a8f24900507db34c84a4688b149b1863a1fb6db1f6beb",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/water.png": "e32078fbcccdba1bc84344dd2405ea0910d5a82c8938264a43e567c842d45cac",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/concrete.png": "2e03d35a3a7d4085eacdd88ae484dc804f9917a2f9b739e063ad804f1acbe739",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/TRIB3.png": "0a97c0a1364a7de0aeaddf8ac525e007b2ec9ff36bd78fd6812a6b3b57d42a81",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/turn150.png": "4ecff1d3dba77b418124fb99d8f2cdbb663b887a0192f86c4d307024a7274b98",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/dekk02.png": "859dec52a821361177714f3fa9d70958f4eb3d4e341bf2c51b658852b4d4145e",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/PASS3.png": "259e867265d9229ecb3708a99ca809843e3027c1018c264a767164a0a98669d6",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/TENTON3.png": "4c34b59db3e9e24ca9d5ccd4aa4a6de14f99165e6dd15ec48ca975b37798608e",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/CAR08.png": "8bfed35bdb5bf5ce4cfda36d4e8fd6c1a85305e28aaf2cc7d616b258841c7b69",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/02.png": "66c6f09259d553ae9a512f8025e973a1b18853c827305c6a5478ddfb445991ed",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/turn50.png": "32e1ecbcbc6eaf2901cb41b714aeb41e8eeb759e9842b0fdc478e9e3150352a7",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/64PASS1.png": "e595729196ad4d9f7896577c026b28cce1e049dbfcecf9354739f2655339b030",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/ALFABLK.png": "020a2451258eb9da9e66413347eeb7e11266ec9b0a9a24ee1c3d8ba2096d5efd",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/PASS7.png": "31fe2f88244e1fab73fce98734e23811add961fe1aef48431c3ea4ea887d239c",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/turn100.png": "830563eb0aa6d8bd62b7a1745f4ddf6e3b4965d26083622f7e1171b28ca80d1a",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/TRIB2.png": "0e7056385a12ec2efc65aaf0a90be18d22143280a0a76080fd4403c6e1994454",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/TRUCK10.png": "6822e5c2cf647eff99e9ec8b7e42bda4ebf09d40d2d9a007788ebb0d33ae1f27",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/tr-barrier-arbor-blue.png": "43c0ef1d1316108cb15f94c9e2dbe49c1de7aec33dbd65132af2db453ac121c4",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/corkscrew.png": "1d6e277710c54a2b2d2e9abcc9a591dc6da17ed1b2b28bffb5bf109890ce5414",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/MASE02.png": "a27332868d44683fd0df14c73b006995476837fd2a22147b7cf824fa2df1a7cf",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/RV4.png": "1d995b5f6888cf38d6327f097eb1179ef1a3c06b30aa6129b66e6c069c3f22dd",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/TIREBLAK2.png": "25b56683af305692fcac4bd7fa6a635eda1564e369736ee7a3aded90ced9a2e7",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/treeC4_n.png": "a0496a7b75bed229e1639b3d546a94bc1bf3dc14db4b3f46bde82580202c1293",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/PAD5.png": "ff305e2ecd5d91028a710f023d3ef3bd42936a010b2acc7c75d45643f7152a98",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/texwheel.png": "ca7e79ed7e3216f9761eb1925840277a63e23bf7595170463b27d7d44cebd403",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/BAR3.png": "e6639475bdec99b931d70003650167afe549118ad6e44cd967eae2a436502838",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/TENTA1.png": "a1f23b235e1f4dfa03cc4073af7c959313d36adec775a2cb09a551ff91572726",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/tree3_n.png": "c995c6a7825908f68ee51913bbc71acbd615b97fb3c08d3d452d534014783527",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/TENTA2.png": "6f8b71e421e77f9ee5188ef7b74d04994f0a50c8ef3c07aadc7cfde59e1d3f36",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/background.png": "8e3ceda3dafdeabd492e06d7ec499fda77c9acacd592dab00d5b07361462ec76",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/GARAGE3.png": "3965564ed55a613d5b15790bfa6528a0fe3af8fa75921324d9e6ca671ac6c588",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/PAD2.png": "5bf755f34f334d533c64d0a315f614458cb5e338c60a84ad85dcc43b78f365ad",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/kilo.png": "caee2234c6aa560d422b776e7cedb08c5bb86a32e05818e41d0e4b77cbda6c6d",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/asphalt.png": "a618317a958ab4045def94a7c5887e2a71c5b042f160bc35a2743c2648aa1c74",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/TRUCK04.png": "e40edbaefda3d0367aeb315f293904f820fed2a758c819aaa455916cdbae0d97",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/sand-new.png": "b40e97be16c76bcad74034c1418ffe73fd83ec8f27744db1a191519aa294dae8",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/CASOT1.png": "dce9a6d102af723022d613f091c1190b8be800e44bc17664f3b34f53d5b1c325",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/treeC3_n.png": "694b7d8785514e222d306a685c7f3d4680ab31b62d083b720fa2af3563495fe0",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/sandwtr.png": "23357ed9035e136ed34c98c473c84bd805592c805e41b9195c57a2c83676e355",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/TRUCK03.png": "582d12e95dcfac9d35289765343e669214c35309eecccd450942c9f17c96a4d6",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/asphside_n.png": "f5c00b3e36b835b75d14e92e657ffda27c839313e1deb754ae4260febc20e166",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/gravel.png": "a9135f5d31ea668605baf8759a6a3a331d71a09f208f2d372b6c570c1627d0ab",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/TENTA3.png": "79c3e06e99f61cb411aecee7235b8728ce5d2f2faef9184a9f735cd48d6c53e4",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/TRUCK12.png": "3b9e2054b2374bb61be46ff8b80b9b85f725ff626a22d245d613516e46332ba6",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/asphalt-he.png": "a6febc4feecaab6c8392335c5f02b51938fe1417c4457b38f6e973d2f43e507c",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/CAR07.png": "e40e66956dcfd1dc726a9e347bf1a861b18f224839d001c2a181c0d89b801073",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/RSA3.png": "49ff24037a602fc887ae96d4965f8a490f196c1147d2b879986c17e1f118b9cb",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/tree7_n.png": "d949177cbb7c264c878847d119e3981032d1df0294612b04139da955bf0db56d",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/PASS1.png": "454c76b96bda72bf58872b4e3a8c870935b3687ad281f43f9f3341b169964088",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/treeSC2_n.png": "70765dfed33e4ca3d1887b6def787fe4254c852c6e136ae5b259286959abd244",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/PADWIN1.png": "3e568efa3b3f0ec19b37143507268b5e95317b74a6ff09cc80ca870335ac5451",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/TRUCK05.png": "d5925b688a423e5c5d48ddde9a786fe63a21a37b81c397a6c6b3e07e55410501",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/asphalt-ls.png": "b1bb2cea5cf8e3f2fbc9c585591a3dc3b00a13c2e3ff99b1bcb480191c154b8a",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/grasssnd.png": "868cd116979eaf83272f0bd565ee2c3e5f8f8285a246d2aae738789cc4bf82fb",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/TRIB9.png": "f3b0b8499221b5a97a41f186a4f5522f1b52130a8795139132f216fbfeb8174c",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/PAD1.png": "7d6eb0a393c11a5a66a75475bec0c4fee40187644f978eb07f6b7cc06dc6e6f2",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/asphalt-le.png": "0e8946711aca99797f682feb4e53daed502166eced7827df12ee2a9782fbda85",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/PAD6.png": "b09be9a4861b8f0df32474ddf7447acebe56467e4422b8762b9d3eef37c42dbd",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/TRAVE3.png": "36add5e94a69f61202712214176e8cb2f0d86f7d425553cb5d99bf884a141ffd",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/PASS4.png": "be6665b9d0616fde63d710eb663679dd0e0ae19e03a018b527f9d088622e2d3d",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/asphdots_n.png": "0d3b9583d30d18039a349e72209bd43e3111c34185dc761f54c1ea896abbd500",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/TRIB7.png": "953d39979c8218e161c5cea43651e114a53c50f0dc628bac6298bfcad8f6fe79",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/TOWDISP3.png": "16bbf9d19ec40bb4a4e50a38724fdca06cf46406640c1e9cdce0f8fcff18aa01",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/TRIB8.png": "a178c67b319214e4b694365aeed9cc380c33c7bc0eed224ab1096bdfce92c2d1",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/PAD8.png": "ba69428480e95a2d38d2f2c994869b66a5e8a659dfddf569c550f376f62d5dbd",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/readme.txt": "96d99c922927cf3b40f79a76c97d367fbe523d03d297561aa150fe1ef2ccd99c",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/PASS10.png": "a43361b92f5f47008a203be8e5eae68a8f31e012dae4f7547595371360d20aa7",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/TRUCK02.png": "9653d6f6a40e22437c392869456a64e31eb68c75c5d66a7bcf7576ac80ae4edf",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/ROAD.png": "777c0a4683998426f8d08dfcf3a4d956b2fcd8a5fad60ff311cc3b6c02351188",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/CAMPER1.png": "a819c78e48cacddf82663e5bbbab1909a362e43ecff224250cc52619106a87bb",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/PASS8.png": "cadcb343d39eef0f1fbc375ff1da713fee6a163d6aa113e2b0ee37ee52fecae9",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/tentblue.png": "e8dc642f42b4889bc39d4d0ae941c26c9a54de54d22567de3a851adffc798d16",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/tr-barrier-arbor.png": "2cab8b9dddf68636c89befc86861205dfbfaf8fa2ea034f36c1b2d13e248ca7b",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/tr-curb-wb-r-o.png": "ca1ee6aaf04fa3ce379f640edeae2fe51f50f8db5f8da76b68cac08f39b6386b",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/asphalt-l.png": "560de746a08ab0da6ce880ce5ebc9e39f35fa2b585836756e0d533c09822c942",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/treeRNS2.png": "12f7464b8a4855f92eb7bbe04e17e2e08b6755c869e478427d9041b5121216ae",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/asphalt2.png": "212297ed9ab7ce0f3b22f6db9b56d7dfab31e63d62bc723792380ef7f365a408",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/tentred.png": "1751b727e530a9906989aa7280e9ec40802cdb0a83021134099f847dfd411dd6",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/shadow2.png": "50bf5ec3bd26f5fc677ce1d24b80572b0b7c1dfcf99e699365fb5054f9a30493",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/CASA1.png": "3d8fdd0b86d0b0d426db0298ff0528869fa086c6f0dee74a307debe960c76163",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/asphalt-h.png": "91380f4a73559e0e0d7c1205379ea016185e6a53ce2246a4dd2c491754816c8c",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/CAR02.png": "28b83e5ebb4d203fd8ef0ba6514723fe4ea8e9eb490567fee44807d168153d8a",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/grasshil.png": "84bb736efe05cc2bfd7981b5477140c9c461673938270e70c09fdbbd7c2c41d7",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/TENT2_D.png": "60173c162d54213bdb0e2bd60253d5a1ac5a69edcc9b27e0dd6aa9ae46c9dad2",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/CARS2.png": "5b48cb6c4c6928f8d2a5c5795dd13baef844c8f877b98af5f4f76d3135ab1f3c",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/CAMPER2.png": "2d8a2b78bed79e4a6156147c6efb4199ef41500bac46586c6269521c32d84484",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/dekk01.png": "21ba91719de277ba204f82161e7c182b6cafba0465e5fa7c219fdae0db5259ff",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/clkdtm.png": "14d64789753219dd651031568808449633c958b35ad4e325acb9a1e21da54e9d",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/PADWIN2.png": "37b458d93a304ddc85558f05ef422c9dd2fa817a280df19f1abd6a4041ffaebf",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/treeS3_n.png": "67764885f4ca4dfffdf048bc86f5b8dbc7464611850de6e71a0dfc64a2415e24",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/STAGE2.png": "b293a90a02e748079ee49a36f76d86f7bdb960d215278507a51f606262f1a94f",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/tr-curb-wb-l-o.png": "c23654f3cc90fb2834ca9ccaf9cba5a6dff6ad13afdc05452d1f63afa7b0378f",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/CASA2.png": "5224f9469dce05206c6b9209cb5b40fcd9d09e86eac781692fe457612bce09b5",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/grassnew.png": "278227d5a80f2d9acf7c5c4460f51fc48c7449fc2b255da2e4fcbeae80ff8d02",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/sandgrvl.png": "295fedf63284248970dd34584be0bd3c6f49846be5bf3e507b1a8fc3c4b84f3b",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/TENTA5.png": "f706ac4a6289e03aaf3f8d799087bebe91cde66d42d1b2ff9ff0f910da268a01",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/MONSTART.png": "a7e539340c6ae90ced6f96f9e70d7c7c6820106258be2c07ef5ee69e1c2080e9",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/corkscrew.acc": "b7a9dc98dead1504164dea680c346b514df648af296f5dd2056bac2f7a6a2453",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/asphsand_n.png": "740f891b0683686d5e6d650d49a5f1dd6e2c4dc94ee074d6a8c1975653f7ea1f",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/RV3.png": "02ad540f885533f3198776c5c43471f3174e73b9d67d61572593a5b71dede450",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/shadow.png": "4dba26b84aa2d30fba84321e9b7d9261f45457b85ae9d845a4608793aad009a8",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/corkscrew.xml": "2fdbf78f6151093c2450d03edcedc88436877cdd86112795cec6b1d9a5057ea9",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/TOW1.png": "9124c6adcab8c4d13cc5ea0e6d15ab73b1e0a6568c44637df89497741504715c",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/pylon3.png": "5f5a2144a87ffccb482b6022132dc6a565ccaeebccdfd91858e8712407cf8b00",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/BAR1.png": "e18f871b6f6f4bbac5eec4eb4b1881925e08778772d7a73909d662356f4176b5",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/ROAD4.png": "73b5fb7675524ebed558cae2603ae4ced17c13a5a342da3cd61ba3a28ab68b38",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/PEP1.png": "5a2f69d3149b0cd54afcaa0ed332552ed99145dd8300bfdee1921863caeb1a81",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/CAMP.png": "241baa08d715667595003570b14e09a21f3704c1e0413c2ea355ef73c87a3101",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/RV5.png": "ea8e60dfeca217a97f12354486bd8d66c8141c668ac409ed4ade40d3ab7f6af8",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/RV1.png": "1a0d66c51c259b6076289716937b7938a7265d7518ce26b26686b10897cb659e",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/64PASS6.png": "30c3d20587c89d07124e69dc0cda1e399dcefdb1ce9ff89cd3ea59d0617b55b0",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/lgtgrn.png": "e685887be3270440cb3afb654947fa67e321c2e0a918afeb6b0e7a55d322b7db",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/lgtred.png": "a9bdb26a7012e85cd723b9d7bbc538b82b3d65ae68bfe6a76e5183fa5149c768",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/CAR01.png": "83ecef1ad886f31af9e590322c83bbd4cff0d41ba270d92fe8aeb59998fdce71",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/roadA-pit.png": "da6682ed04b0688d4e8c16f65d6b6a6fdf5a025acc9ebfffe148418ee81ee942",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/PASS2.png": "b7f08711584a1c0c5bbfeb91690828254b9ef42f70c60c7a744f5f7b62e7aa75",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/tileroof.png": "7462246646d43b5815abc57d57fdd516dae2a4109bc0bc3f2be074eab80e6160",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/TRIB6.png": "8bf3ccefc1c0e36e49e5ec8553a0e127a06afb0c9f3d987da22c01d4486b4af8",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/PAD1a.png": "ced2a421f205b00760619e065f1beebe5269aec5d8899594d8febe3960dd6783",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/TRUCK11.png": "6822e5c2cf647eff99e9ec8b7e42bda4ebf09d40d2d9a007788ebb0d33ae1f27",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/TENTPEP2.png": "84bb6c1bebce970db0e7714b54c1e4249366bff3170e5a1a440ff7e5aa96b862",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/CARS1.png": "da2e4c724ad5f60317fca8ca5f10a3f1eb551efff2e712c43a2780f0cd110258",
+    "/usr/local/torcs/share/games/torcs/tracks/road/corkscrew/TENTA4.png": "7946ad6d5e2a3a1e38f60a46692f35e948e2fffdb44cbad40dfce0773e074a7e",
+    "/usr/local/torcs/lib/torcs/torcs-bin": "14202cd0d5f84c94e3bd78ecea422f656b2b840da00d92817c8403b17de11055",
+    "/usr/local/torcs/lib/torcs/drivers/scr_server/scr_server.so": "a45803c48bcc5db61e73274a539ac11da27bbfe8bfca48a092e5c3d5d8e6cf9f",
+    "/usr/local/torcs/lib/torcs/modules/simu/simuv2.so": "9f31f7e3fbf273829ac30138ed362396eab57735deab5de5c5b38e635161a24b",
+    "/usr/local/torcs/lib/torcs/lib/libraceengine.so": "10d9e3d98354920c32a2732e20f4762bb049cca125e6ea986018b7b298f23e87"
+  },
+  "race_sha256": "c20af215d6b5d286ccf345f2f6246640af70f828a6364813002782de4b587271",
+  "angles": [
+    -45,
+    -19,
+    -12,
+    -7,
+    -4,
+    -2.5,
+    -1.7,
+    -1,
+    -0.5,
+    0,
+    0.5,
+    1,
+    1.7,
+    2.5,
+    4,
+    7,
+    12,
+    19,
+    45
+  ],
+  "target": {
+    "track": "corkscrew",
+    "driver": "scr_server 1",
+    "driver_index": 0,
+    "standing_start": true
+  },
+  "status": "lap_complete_candidate",
+  "simulator_command": [
+    "/usr/local/torcs/lib/torcs/torcs-bin",
+    "-l",
+    "/home/student/workspace/gym_torcs/experiments/20260925T010713_126466Z_atlas-v1/torcs_local/",
+    "-L",
+    "/usr/local/torcs/lib/torcs",
+    "-D",
+    "/usr/local/torcs/share/games/torcs"
+  ],
+  "runtime_command": [
+    "/usr/local/torcs/lib/torcs/torcs-bin",
+    "-l",
+    "/home/student/workspace/gym_torcs/experiments/20260925T010713_126466Z_atlas-v1/torcs_local/",
+    "-L",
+    "/usr/local/torcs/lib/torcs",
+    "-D",
+    "/usr/local/torcs/share/games/torcs"
+  ],
+  "cyclic_gc_deferred_during_exchange": true
+}

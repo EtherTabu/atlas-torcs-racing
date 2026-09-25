@@ -1,0 +1,2 @@
+# Preserve qualified source bytes and their SHA-256 across checkouts.
+* -text
