@@ -1,10 +1,10 @@
-# ATLAS â€” Adaptive Track-Line Autonomous System
+# ATLAS — Adaptive Track-Line Autonomous System
 
 A measured, map-aware racing controller for the IBM SkillsBuild TORCS challenge:
 the fastest valid **standing-start lap of Corkscrew**, using **scr_server 1** and
 the prescribed car and livery.
 
-**Sense â†’ map â†’ plan â†’ control â†’ measure â†’ falsify â†’ improve.**
+**Sense → map → plan → control → measure → falsify → improve.**
 
 ## Qualified performance
 
@@ -108,7 +108,7 @@ listed in [the fixture inventory](evidence/fixture_inventory.json).
 
 `python tools/generate_release.py` verifies selected source hashes and generates
 this README plus `dist/submission_manifest.json`. The manifest records the Git
-revision at generation time. Final video: **pending â€” not submission-complete**.
+revision at generation time. Final video: **pending — not submission-complete**.
 
 The release is not submission-complete until the
 [submission-readiness checklist](docs/SUBMISSION_READINESS.md) is satisfied.

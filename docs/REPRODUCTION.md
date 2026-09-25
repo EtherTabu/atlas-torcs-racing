@@ -30,7 +30,7 @@ must be investigated rather than bypassed to obtain a PASS.
 
 ## Standing-start GUI run
 
-Select Practice â†’ Corkscrew, scr_server 1 (driver index 0), initial speed zero,
+Select Practice → Corkscrew, scr_server 1 (driver index 0), initial speed zero,
 with the prescribed original car and livery. The controller attaches to SCR on
 localhost UDP port 3001. Start `python competition_client.py --params
 atlas_params.json`, then start the GUI race. Ctrl+C closes/drains telemetry.
@@ -54,7 +54,7 @@ python qualify_atlas.py --params atlas_params.json --gui-run experiments/ACTUAL_
 This runs the timing battery; do not repeat it for ordinary exploratory tuning.
 `--max-lap-time` sets a strict promotion target and defaults to 85.0 seconds.
 The local gate requires completion, a standing start, zero damage, all track
-sensors on road, |trackPos| â‰¤ .6, complete evidence and unchanged installed assets.
+sensors on road, |trackPos| ≤ .6, complete evidence and unchanged installed assets.
 It is not a replacement for the organizer's full submission rules.
 
 ## Release generation

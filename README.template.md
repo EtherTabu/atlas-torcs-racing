@@ -1,10 +1,10 @@
-# ATLAS â€” Adaptive Track-Line Autonomous System
+# ATLAS — Adaptive Track-Line Autonomous System
 
 A measured, map-aware racing controller for the IBM SkillsBuild TORCS challenge:
 the fastest valid **standing-start lap of Corkscrew**, using **scr_server 1** and
 the prescribed car and livery.
 
-**Sense â†’ map â†’ plan â†’ control â†’ measure â†’ falsify â†’ improve.**
+**Sense → map → plan → control → measure → falsify → improve.**
 
 ## Qualified performance
 

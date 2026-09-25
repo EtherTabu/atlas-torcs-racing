@@ -2,7 +2,8 @@
 
 Target: **EtherTabu/atlas-torcs-racing**, public. Never modify EtherTabu/EtherTabu.
 The existing local main history is the packaging history to push, not a new empty
-copy. No remote has been created and no final tag is authorized yet.
+copy. The public remote is live at https://github.com/EtherTabu/atlas-torcs-racing.
+No final release/tag has been created; official video consistency remains pending.
 
 Livery identity and required public inclusion are resolved by IBM documentation;
 see [SUBMISSION_READINESS.md](SUBMISSION_READINESS.md). Preserve its exact bytes.
