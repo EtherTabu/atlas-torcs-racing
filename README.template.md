@@ -69,6 +69,16 @@ interpolation and forward acceleration planning in ten runs. It produced no
 challenger to RC1. This repository contains the qualified racer and representative
 audit evidence, not the raw experimental laboratory.
 
+## How IBM Bob was used
+
+IBM Bob was used as an independent final release auditor for ATLAS. It reviewed
+the public repository, cross checked controller architecture against source,
+independently verified qualified artefact hashes, inspected machine readable
+qualification evidence, checked repository links and publication safety, and
+identified remaining release and submission items. IBM Bob did not create ATLAS,
+develop RC1, tune the controller, produce the 84.388 second lap, or generate the
+qualification evidence. See the [final audit](docs/IBM_BOB_FINAL_AUDIT.md).
+
 ## Timing and control integrity
 
 SCR has an approximately 10 ms response deadline. A late response can hold the
@@ -117,6 +127,15 @@ use `competition_client.py` for the selected ATLAS candidate.
 The six selected trace fixtures support exact offline command replay, historical
 comparison, GUI timing resampling and the selected benchmark. Their purpose is
 listed in [the fixture inventory](evidence/fixture_inventory.json).
+
+`atlas_params.json` is the qualified RC1 parameter set. `best_params.json` and
+`candidate_v3_params.json` are historical, non selected parameter snapshots kept
+to support the representative evidence; they are not RC1 inputs.
+
+The checkpoint's historical `qualification_report` path refers to the retained
+local laboratory. The public canonical copy is `evidence/qualification.json`.
+Its SHA-256 exactly matches `qualification_report_sha256` in
+`evidence/qualified_checkpoint.json`.
 
 `python tools/generate_release.py` verifies selected source hashes and generates
 this README plus `dist/submission_manifest.json`. The manifest records the Git

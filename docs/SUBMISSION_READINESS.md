@@ -7,7 +7,7 @@ the available evidence and require human confirmation against the official rules
 
 | Check | Current evidence / remaining action |
 |---|---|
-| Public GitHub repository | Published public repository: `EtherTabu/atlas-torcs-racing`, separate from the profile repository `EtherTabu/EtherTabu`. |
+| Public GitHub repository | **Complete.** Public repository: `EtherTabu/atlas-torcs-racing`, separate from the profile repository `EtherTabu/EtherTabu`. |
 | AI controller code included | Present; selected runtime source hashes must match generated manifest. |
 | Required car livery included | `assets/livery/car1-trb1.rgb` copied byte-for-byte from SCR driver index 0. Provenance and hash included. |
 | Official livery unchanged | Local identity verified against qualification hashes. Public inclusion is explicitly required by IBM. Identity resolved by IBM Customising Guide: car1-trb1.rgb, default slot 1, SCR index 0; exact qualified bytes preserved. |
@@ -22,8 +22,8 @@ the available evidence and require human confirmation against the official rules
 | License and attribution | Existing source notices retained. Do not apply the code's MIT license to the livery or independently licensed simulator assets. IBM requires livery inclusion for this submission; no broader artwork license is asserted. |
 | Official submission procedure | **Human confirmation required:** deadline, upload destination, video specification and any organizer rules not supplied here. |
 
-Final submission is not complete while the public repository, official video,
-source/video consistency, or organizer-confirmation rows remain pending.
+Final submission is not complete while the official video, source/video consistency,
+course completion, or organizer-confirmation rows remain pending.
 
 
 | Additional verified IBM requirement | Status |

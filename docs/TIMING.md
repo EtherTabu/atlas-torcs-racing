@@ -99,7 +99,8 @@ under the same three timing conditions:
 3. Seeded resampling of the actual GUI receive-to-send distribution, added to
    normal compute/transport time, a conservative replay of measured jitter.
 
-Candidate: **9/9**, all 89.394 with the original trace hash. Reference: **6/6**,
+Earlier spatial candidate, not RC1: **9/9**, all 89.394 with the original trace
+hash. Reference: **6/6**,
 all 95.310 with its original trace hash. The separate 2 ms buffered full lap also
 matches exactly. The artificial 12 ms overload diagnoses the deadline mechanism;
 it is outside the observed GUI response envelope and is not a promotion gate.

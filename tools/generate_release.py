@@ -56,7 +56,7 @@ def main():
         damage=analysis['damage_increase'],max_abs_trackPos=analysis['max_abs_trackPos'],
         peak_speed_kmh=analysis['max_speed_kmh'],timing_repetitions=report['confirmation_count'],
         gui_run=checkpoint['gui_run'],livery=livery,video=args.video,
-        submission_ready=False,pending=['Public repository publication','Official video and source/video consistency',
+        submission_ready=False,pending=['Official video and source/video consistency',
         'Organizer deadline, video format and submission procedure confirmation'],
         provenance_note='Historical qualification binds byte-identical runtime sources by hash. The source commit is the packaging revision, not a claim about when the historical run occurred.')
     (ROOT/'dist').mkdir(exist_ok=True)
@@ -66,7 +66,7 @@ def main():
         for name,time,level in [('Telemetry baseline',252.856,'Audited historical'),('Mapped reference',95.310,'Repeated reference'),('Spatial candidate',89.394,'Timing + GUI'),(args.version,analysis['lap_time_s'],'Timing + GUI')]:
             table+=f'| {name} | {time:.3f} | {level} |\n'
         hash_table='| Artifact | SHA-256 |\n|---|---|\n'+''.join(f'| `{name}` | `{sha}` |\n' for name,sha in hashes.items() if name in ['atlas_controller.py','atlas_params.json','track_model.json'])
-        values=dict(BENCHMARK_TABLE=table,VERSION=args.version,LAP_TIME=f"{analysis['lap_time_s']:.3f}",REPEATS=str(report['confirmation_count']),PEAK_SPEED=f"{analysis['max_speed_kmh']:.3f}",TRACK_POS=f"{analysis['max_abs_trackPos']:.6f}",HASH_TABLE=hash_table,VIDEO=args.video or 'pending â€” not submission-complete')
+        values=dict(BENCHMARK_TABLE=table,VERSION=args.version,LAP_TIME=f"{analysis['lap_time_s']:.3f}",REPEATS=str(report['confirmation_count']),PEAK_SPEED=f"{analysis['max_speed_kmh']:.3f}",TRACK_POS=f"{analysis['max_abs_trackPos']:.6f}",HASH_TABLE=hash_table,VIDEO=args.video or 'pending, not submission complete')
         content=(ROOT/'README.template.md').read_text()
         for key,value in values.items():content=content.replace('{{'+key+'}}',value)
         if '{{' in content:raise ValueError('Unresolved README field')
