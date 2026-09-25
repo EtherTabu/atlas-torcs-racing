@@ -38,3 +38,11 @@ an assertion about the organizer's required video format.
 6. Only after the official video and final consistency review are complete, create
    the final release/tag. Publish no claim of complete submission while the checklist
    still contains unresolved organizer requirements.
+
+## Presentation boundary
+
+Use original installed track textures for the official capture. Branded banner
+copies under presentation/ are separate engineering-showcase material only. The
+IBM guide permits banner texture customization but does not explicitly establish
+its use in official fastest-lap footage. Do not install the showcase copy for the
+official run. No engineering overlays belong in the official capture workflow.

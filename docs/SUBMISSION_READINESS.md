@@ -36,3 +36,16 @@ IBM competition documentation establishes the car1-trb1 driver livery and defaul
 slot; IBM submission instructions require public inclusion and unchanged official
 submission livery. [Provenance](LIVERY_PROVENANCE.md) binds this to RC1's exact asset.
 The alternate car1-ow1 configuration is not a release blocker.
+
+## Presentation checkpoint
+
+Public repository, AI source, required livery and IBM livery identity evidence are
+present. RC1's car dynamics, track model, Corkscrew standing-start configuration and
+all 83 immutable checkpoint files remain unchanged. Final packaging commit is bound
+in the generated distribution manifest after each published packaging change.
+
+Official fastest-lap video and final source/video consistency remain pending.
+All team members' IBM SkillsBuild course completion remains unverified; no completion
+claim is made. No final release/tag until the video consistency gate is complete.
+The official video uses stock track textures. The separate branded track copy and
+editable artwork are [showcase material](../presentation/README.md), not new lap evidence.

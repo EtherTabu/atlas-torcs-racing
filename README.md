@@ -1,10 +1,23 @@
-# ATLAS — Adaptive Track-Line Autonomous System
+# ATLAS
 
-A measured, map-aware racing controller for the IBM SkillsBuild TORCS challenge:
-the fastest valid **standing-start lap of Corkscrew**, using **scr_server 1** and
-the prescribed car and livery.
+**HUMAN LED AI ACCELERATED RACE PROVEN**
 
-**Sense → map → plan → control → measure → falsify → improve.**
+Adaptive Track-Line Autonomous System
+
+**84.388 seconds.** Frozen RC1 completed a standing-start Corkscrew lap with
+**zero damage**, reproduced across **nine timing runs and a normal GUI run**.
+This repository contains the controller and evidence behind that result.
+
+## What makes ATLAS different
+
+Human strategy set the objective, validity boundaries and promotion criteria.
+An AI coding agent implemented and tested hypotheses through accelerated simulation.
+Measured failures and invalid gains were rejected; control-loop timing faults were
+investigated rather than hidden. The final trajectory was reproduced in normal GUI
+TORCS, binding the result to preserved source, parameters, map and asset hashes.
+
+The progression reflects more capable control, regional optimization and increasingly
+strict validation. Historical checkpoints do not all carry RC1's qualification level.
 
 ## Qualified performance
 
@@ -24,6 +37,10 @@ organizer-issued certification. Experimental improvements are never substituted
 for qualified results.
 
 ![Recorded path and spatial time gains](evidence/path_and_delta.png)
+
+![Benchmark progression](presentation/progression.svg)
+
+![Qualification summary](presentation/qualification.svg)
 
 ## How it drives
 
@@ -123,3 +140,10 @@ ATLAS builds on Gym-TORCS and the SCR Python client lineage. Existing notices
 are preserved. See [LICENSE](LICENSE) and [third-party notices](NOTICE.md).
 The code license is not asserted to cover the livery or the separately installed
 TORCS simulator and car assets.
+
+## Presentation and official footage
+
+[ATLAS artwork and showcase plan](presentation/README.md) use the exact project
+tagline and recorded evidence. The official video will use original track textures;
+the branded track copy is separate showcase material. No controller, livery,
+physics, geometry or race configuration was changed for presentation.
