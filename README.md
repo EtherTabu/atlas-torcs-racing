@@ -81,9 +81,7 @@ IBM Bob was used as an independent final release auditor for ATLAS. It reviewed
 the public repository, cross checked controller architecture against source,
 independently verified qualified artefact hashes, inspected machine readable
 qualification evidence, checked repository links and publication safety, and
-identified remaining release and submission items. IBM Bob did not create ATLAS,
-develop RC1, tune the controller, produce the 84.388 second lap, or generate the
-qualification evidence. See the [final audit](docs/IBM_BOB_FINAL_AUDIT.md).
+identified remaining release and submission items. See the [final audit](docs/IBM_BOB_FINAL_AUDIT.md).
 
 ## Timing and control integrity
 
