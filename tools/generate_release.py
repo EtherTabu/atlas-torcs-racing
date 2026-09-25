@@ -57,7 +57,7 @@ def main():
         peak_speed_kmh=analysis['max_speed_kmh'],timing_repetitions=report['confirmation_count'],
         gui_run=checkpoint['gui_run'],livery=livery,video=args.video,
         submission_ready=False,pending=['Public repository publication','Official video and source/video consistency',
-        'Official livery identity: resolve conflicting bundled car/livery pairs','Organizer deadline, video format and submission procedure confirmation'],
+        'Organizer deadline, video format and submission procedure confirmation'],
         provenance_note='Historical qualification binds byte-identical runtime sources by hash. The source commit is the packaging revision, not a claim about when the historical run occurred.')
     (ROOT/'dist').mkdir(exist_ok=True)
     (ROOT/'dist/submission_manifest.json').write_text(json.dumps(manifest,indent=2))

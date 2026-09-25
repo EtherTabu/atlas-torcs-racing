@@ -3,7 +3,8 @@
   "sha256": "05bc6e7f24528cc66ca01358ec9ba78427b5ed413d7f5471c2e775bb2de0987c",
   "modified": false,
   "driver": "scr_server 1",
-  "organizer_approval": "Identity pending: image contains conflicting scr_server 1 car1-trb1 and car1-ow1 configurations",
+  "organizer_approval": "Established by supplied IBM competition documentation: car1-trb1.rgb, default slot 1, drivers/scr_server/0 override; qualified bytes unchanged",
   "redistribution_license": "IBM screenshot requires public livery inclusion for this submission; no broader license inferred",
-  "evidence": "../../docs/LIVERY_PROVENANCE.md"
+  "evidence": "../../docs/LIVERY_PROVENANCE.md",
+  "alternate_configuration": "Bundled car1-ow1 is an alternate configuration and does not block release"
 }

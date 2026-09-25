@@ -4,9 +4,8 @@ Target: **EtherTabu/atlas-torcs-racing**, public. Never modify EtherTabu/EtherTa
 The existing local main history is the packaging history to push, not a new empty
 copy. No remote has been created and no final tag is authorized yet.
 
-Publication is currently blocked by the single conflicting livery identity
-question in [SUBMISSION_READINESS.md](SUBMISSION_READINESS.md). Resolve that before
-uploading the current history, which includes the original livery bytes.
+Livery identity and required public inclusion are resolved by IBM documentation;
+see [SUBMISSION_READINESS.md](SUBMISSION_READINESS.md). Preserve its exact bytes.
 
 After resolution, use an existing authenticated GitHub session or Git credential
 manager/API path; CLI installation is not intrinsically required. If authentication

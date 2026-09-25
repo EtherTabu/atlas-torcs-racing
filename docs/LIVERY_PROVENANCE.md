@@ -34,7 +34,24 @@ and immutability do not independently prove organizer intent between the two roo
 [Raw trace](../evidence/livery-trace/trace.json) and both driver XMLs preserve the findings.
 No asset, baseline, simulator configuration or RC1 source was changed; no race ran.
 
-**Single missing piece:** organizer confirmation of which supplied scr_server 1
-car/livery pair is required: qualified car1-trb1 or separately bundled car1-ow1.
-Do not silently swap either asset or car to resolve this. Public inclusion is required,
-but publication of the selected candidate waits for this identity decision.
+## Resolved by IBM competition documentation
+
+Established by IBM competition documentation: the scr_server student workflow uses
+the car1-trb1 driver livery; car1-trb1.rgb is driver slot 1 (default). The
+[driver override instructions](../evidence/ibm-customising-driver-override.png)
+identify drivers/scr_server/0/car1-trb1.rgb as loaded first during a race.
+The [default-slot instructions](../evidence/ibm-customising-default-slot.png),
+[texture overview](../evidence/ibm-customising-textures.png) and
+[student setup excerpt](../evidence/ibm-student-setup.png) preserve the supplied evidence.
+
+Established by IBM submission instructions: a car livery must be included in the
+public GitHub repository and the official submission livery must not be changed.
+No broader copyright or artwork license is inferred.
+
+Together with the recorded XML mapping and byte comparison, this establishes the
+packaged RC1 car1-trb1.rgb as the competition livery for scr_server 1. SHA-256 remains
+05bc6e7f24528cc66ca01358ec9ba78427b5ed413d7f5471c2e775bb2de0987c.
+The guide's installation prefix differs; the relative driver override and car
+identity agree. The car1-ow1 archive is an alternate bundled configuration and no
+longer blocks release. No livery, controller, parameters, physics or race configuration
+were changed.

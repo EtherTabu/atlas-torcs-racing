@@ -113,8 +113,8 @@ revision at generation time. Final video: **pending â€” not submission-comp
 The release is not submission-complete until the
 [submission-readiness checklist](docs/SUBMISSION_READINESS.md) is satisfied.
 The packaged livery is an unchanged copy of the locally qualified asset; its
-exact organizer-required identity still needs confirmation between two bundled
-car/livery pairs. IBM explicitly requires public livery inclusion for this entry;
+identity is established by IBM competition documentation. IBM explicitly requires
+public livery inclusion for this entry;
 see [provenance](docs/LIVERY_PROVENANCE.md).
 
 ## Credits and license

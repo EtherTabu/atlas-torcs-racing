@@ -10,7 +10,7 @@ the available evidence and require human confirmation against the official rules
 | Public GitHub repository | Local curated tree prepared; remote publication pending. Intended repository: `EtherTabu/atlas-torcs-racing`, never the profile repository `EtherTabu/EtherTabu`. |
 | AI controller code included | Present; selected runtime source hashes must match generated manifest. |
 | Required car livery included | `assets/livery/car1-trb1.rgb` copied byte-for-byte from SCR driver index 0. Provenance and hash included. |
-| Official livery unchanged | Local identity verified against qualification hashes. Public inclusion is explicitly required by IBM. Exact identity remains unresolved because two image-bundled SCR configurations disagree; see LIVERY_PROVENANCE.md. |
+| Official livery unchanged | Local identity verified against qualification hashes. Public inclusion is explicitly required by IBM. Identity resolved by IBM Customising Guide: car1-trb1.rgb, default slot 1, SCR index 0; exact qualified bytes preserved. |
 | Car dynamics unchanged | Qualification preserves installed car, track and physics hashes. No model dynamics are distributed as modified assets. |
 | Corkscrew | Recorded race configuration and complete trace identify the selected track. |
 | Standing start | First sensor: distRaced 0, speed effectively zero; official lap timer used. |
@@ -30,10 +30,9 @@ source/video consistency, or organizer-confirmation rows remain pending.
 |---|---|
 | All team members finish IBM Granite Models for Software Development | Participant completion needs human confirmation. |
 
-## Single livery blocker
+## Livery resolved
 
-The screenshot establishes public livery inclusion. The remaining question is
-which image-bundled car/livery pair the organizer intends for scr_server 1:
-car1-trb1 (qualified installation) or car1-ow1 (separately bundled SCR archive).
-See [the complete read-only trace](LIVERY_PROVENANCE.md). No general redistribution
-permission question remains for the required submission context.
+IBM competition documentation establishes the car1-trb1 driver livery and default
+slot; IBM submission instructions require public inclusion and unchanged official
+submission livery. [Provenance](LIVERY_PROVENANCE.md) binds this to RC1's exact asset.
+The alternate car1-ow1 configuration is not a release blocker.
