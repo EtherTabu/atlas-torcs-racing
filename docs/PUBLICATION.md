@@ -4,7 +4,7 @@ Target: **EtherTabu/atlas-torcs-racing**, public. Never modify EtherTabu/EtherTa
 The existing local main history is the packaging history to push, not a new empty
 copy. No remote has been created and no final tag is authorized yet.
 
-Publication is currently blocked by the single livery provenance/redistribution
+Publication is currently blocked by the single conflicting livery identity
 question in [SUBMISSION_READINESS.md](SUBMISSION_READINESS.md). Resolve that before
 uploading the current history, which includes the original livery bytes.
 

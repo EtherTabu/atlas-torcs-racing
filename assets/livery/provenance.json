@@ -3,6 +3,7 @@
   "sha256": "05bc6e7f24528cc66ca01358ec9ba78427b5ed413d7f5471c2e775bb2de0987c",
   "modified": false,
   "driver": "scr_server 1",
-  "organizer_approval": "Needs confirmation against official competition package",
-  "redistribution_license": "Not established from available project evidence"
+  "organizer_approval": "Identity pending: image contains conflicting scr_server 1 car1-trb1 and car1-ow1 configurations",
+  "redistribution_license": "IBM screenshot requires public livery inclusion for this submission; no broader license inferred",
+  "evidence": "../../docs/LIVERY_PROVENANCE.md"
 }
