@@ -1,6 +1,8 @@
 # Official-video preparation — frozen ATLAS RC1
 
-Status: workflow prepared; no new video or simulator run has been made.
+Status: capture and source/video consistency **PASS** on 2026-09-25.
+The procedure below documents the completed capture; no further race is required.
+See the [verified record](SOURCE_VIDEO_CONSISTENCY.md) for the preferred candidate.
 The selected candidate remains 84.388 s with the preserved nine-run timing PASS
 and identical normal GUI trajectory. This workflow is a project procedure, not
 an assertion about the organizer's required video format.

@@ -1,0 +1,146 @@
+{
+  "status": "PASS",
+  "reviewed_utc": "2026-09-25T15:24:24.931623+00:00",
+  "reviewer": "Codex automated checks and visual frame review",
+  "capture_source_commit": "3427a92e8604fc14e88c99afb1d47ccb301f3a88",
+  "run_id": "20260925T151614_884743Z_atlas-v1",
+  "run_files_sha256": {
+    "manifest.json": "1df447b5f553321bd22b3a7390e93fd2fa24a79cae22054ab765349fbbb8a17f",
+    "analysis.json": "99547c53586039bcce996da850b77e8cda1968e578a3e9398f7986c7f344ef03",
+    "summary.json": "389a529ad4706fc57afa9ad701da4ab61edc24750bb556e57374abbbbc2a6c3f",
+    "race.xml": "c20af215d6b5d286ccf345f2f6246640af70f828a6364813002782de4b587271",
+    "packets.jsonl.gz": "a6bee877667e47788d819bfefad7d0fa3575647baf3f538bfef21bd1118c2a02"
+  },
+  "analysis": {
+    "packets": 4076,
+    "distance_m": 3619.34,
+    "final_lap_time": 0.0139995,
+    "gear_command_changes": 23,
+    "damage_increase": 0.0,
+    "damage_present_all": true,
+    "max_abs_trackPos": 0.583837,
+    "max_abs_angle": 0.540182,
+    "max_speed_kmh": 222.248,
+    "steering_saturation_packets": 27,
+    "brake_packets": 610,
+    "standing_start_speed_kmh": -0.0187056,
+    "trajectory_sha256": "1f0d7f806201920aa2979450588ccf61f4b3d624dce0aecb10bc5ba8d3c3ef60",
+    "note": "No official validity flag supplied; trackPos is car-center position, not tire clearance.",
+    "validity_checks": {
+      "completed": true,
+      "standing_start": true,
+      "no_damage": true,
+      "conservative_track_margin": true,
+      "all_track_sensors_on_road": true,
+      "contiguous_records": true,
+      "installed_assets_unchanged": true
+    },
+    "local_validity": "passed",
+    "lap_time_s": 84.388
+  },
+  "runtime_source_sha256": {
+    "async_telemetry.py": "10a12eebc50904a7c863e09f9a60ae1dbe0e7fc6923a58d54d8c75862822f0fc",
+    "atlas_controller.py": "3f04a590c1ce72d1ff29adb6b4dd73a6bd649eac31ce3764e25ce7fa59784be5",
+    "atlas_params.json": "c6ac84014112edc203db0c5995e439a78af07137601ea3152bb9cedb6cad72a9",
+    "competition_client.py": "8b6e224005fc53ff90967d42bc16999a0508cb6ec3df14f706fa604ec8bf8b3c",
+    "experimental_controller.py": "5e8dab1f952bc34bb2d3993dbc8d95364dfa30f14e74154eefcbb325ba612a61",
+    "mapped_controller.py": "938bbc334314af3738b7131bf456e7c20297769549f97adf25156bf29dea00cd",
+    "race_experiment.py": "9c47b23cc2643378e2e472233902799968886262d69a0e65a3e3475edfaffd28",
+    "racing_controller.py": "7594abd158d50c51f4a1fc1276d292fcb3dcc82643c2480f7c646d7e269f7434",
+    "timing_experiment.py": "9d4d3825ee3e2feda2e3091f7f6695b388dfc3cc9c9ce42b47fe48bbb538ed20",
+    "torcs_jm_par.py": "a2c08034e579e8b11566699813c258b2e4ddbf08af96f5c1260c0ef790cbf286",
+    "torcs_telemetry.py": "15ebe9884510bef17a9241ae8633d96e5cde9a4e10665c05c2dbc7b389079836",
+    "track_model.json": "eea1b611a1d99a8921140abe4568e7985e2e0c6f726c7b62c151d5145294917f"
+  },
+  "livery_sha256": "05bc6e7f24528cc66ca01358ec9ba78427b5ed413d7f5471c2e775bb2de0987c",
+  "qualification_sha256": "db825cbe79ee85bb34ff8191db08fd9824cb16d632250960b6c7b7fed77d4704",
+  "checkpoint_sha256": "c4c1477cafc9d3451b76de30fad129f7b200c28deaaf6ef74ee2c98ad1144c2b",
+  "race_sha256": "c20af215d6b5d286ccf345f2f6246640af70f828a6364813002782de4b587271",
+  "race_matches_qualified_gui": true,
+  "installed_asset_count": 197,
+  "installed_assets_match_checkpoint": true,
+  "raw_video": {
+    "filename": "2edbd66db06f_1 - noVNC - Google Chrome 2026-09-25 11-16-00.mp4",
+    "size_bytes": 166720608,
+    "created_utc": "2026-09-25T15:16:00.7673605Z",
+    "last_write_utc": "2026-09-25T15:18:52.5315214Z",
+    "sha256": "39ebbabfe7dedd142ff5d8d1d5d31c8dd83f813291071aa1c3a736b637d4acaf",
+    "duration_s": 174.036767,
+    "recorder": "Windows Xbox Game Bar capturing Chrome/noVNC",
+    "encoding": "H.264 1824x1392; AAC audio; nominal 30 fps, variable frame timestamps",
+    "storage": "Original retained locally in Windows Videos/Captures; not altered or uploaded",
+    "role": "Untouched immutable provenance source"
+  },
+  "run_archive": {
+    "filename": "ATLAS-RC1-recorded-run.zip",
+    "sha256": "f93d6d04a6fdd32e54b0c8c1a6f0629d3b1dbebcf0e691b1ff7b6dd0015f6510"
+  },
+  "visual_review": {
+    "standing_start": true,
+    "corkscrew": true,
+    "qualified_livery": true,
+    "stock_textures": true,
+    "lap_continuity": true,
+    "completed_result": true,
+    "displayed_result": "01:24:38 (HUD hundredths); SCR lastLapTime 84.388 seconds",
+    "limitation": "The frozen harness exits immediately on completion. The canonical candidate includes the genuine completion frame for its native duration, with no artificial hold. The separately retained presentation copy holds that frame for five seconds and is not the preferred organizer-facing video.",
+    "representative_frames_reviewed": [
+      "Before standing start",
+      "Standing start",
+      "Early lap",
+      "Mid-lap",
+      "Late lap",
+      "Genuine completion"
+    ]
+  },
+  "submission_ready": false,
+  "pending": [
+    "IBM course completion for all required participants",
+    "Organizer deadline and video format confirmation",
+    "Final organizer submission/upload by a human"
+  ],
+  "presentation_video": {
+    "filename": "ATLAS-RC1-official-lap.mp4",
+    "size_bytes": 37560213,
+    "sha256": "256a0e7f6d506226e0285c4cd32a3e0ddd977a366893cde18773bf1aadcdb6f9",
+    "duration_s": 95.966667,
+    "encoding": "H.264 1000x750, variable frame timestamps; silent",
+    "transform": "Raw timestamps [78,168.92) seconds; crop 1000:750:10:240; unchanged playback speed; audio removed; final captured completion frame cloned for 5 seconds. No invented result or engineering overlay.",
+    "ffmpeg_filter": "trim=start=78:end=168.92,setpts=PTS-STARTPTS,crop=1000:750:10:240,tpad=stop_mode=clone:stop_duration=5",
+    "role": "Presentation only; held completion frame; not preferred for organizer submission"
+  },
+  "submission_candidate": {
+    "role": "Preferred organizer-facing video, subject to organizer rules",
+    "filename": "ATLAS-RC1-submission-candidate.mp4",
+    "local_path": "dist/final-release/ATLAS-RC1-submission-candidate.mp4",
+    "size_bytes": 37430884,
+    "duration_s": 87.901867,
+    "width": 1006,
+    "height": 754,
+    "sha256": "0772657c069b61e887a10bc757138f47c40399fd5ff95d43debd745eee2e8ba4",
+    "encoding": "H.264, silent, original variable frame timing",
+    "transform": "Trim RAW timestamps [81,168.92) seconds; crop 1006:754:8:240; reset timestamps by a constant offset only; no scaling, overlays, reconstruction, transitions or finish hold. Audio omitted.",
+    "retained_frames": 1252,
+    "first_raw_frame_pts_ticks": 2430515,
+    "last_raw_frame_pts_ticks": 5066571,
+    "time_base": "1/30000",
+    "max_relative_timestamp_deviation_ticks": 0,
+    "frame_count_matches_raw_interval": true,
+    "playback_speed": 1,
+    "finish_hold_added": false,
+    "full_viewport_and_hud_preserved": true,
+    "retained_interface_elements": [
+      "Small noVNC sidebar handle overlapping gameplay",
+      "Mouse pointer"
+    ],
+    "removed_interface_elements": [
+      "Chrome tabs, address bar and bookmarks",
+      "XFCE panel and window chrome",
+      "Desktop and scrollbars"
+    ],
+    "computer_use_outline_visible": false
+  },
+  "preferred_video": "submission_candidate",
+  "release_tag": "atlas-rc1-final",
+  "recorded_run_local_path": "experiments/20260925T151614_884743Z_atlas-v1"
+}

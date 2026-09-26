@@ -3,7 +3,10 @@
 Target: **EtherTabu/atlas-torcs-racing**, public. Never modify EtherTabu/EtherTabu.
 The existing local main history is the packaging history to push, not a new empty
 copy. The public remote is live at https://github.com/EtherTabu/atlas-torcs-racing.
-No final release/tag has been created; official video consistency remains pending.
+Official video consistency is PASS. Publish `atlas-rc1-final` from the final
+CI-passing packaging commit with its freshly generated submission manifest,
+`ATLAS-RC1-submission-candidate.mp4` and recorded-run archive. Retain RAW locally.
+The held-frame presentation copy is not the preferred submission video.
 
 Livery identity and required public inclusion are resolved by IBM documentation;
 see [SUBMISSION_READINESS.md](SUBMISSION_READINESS.md). Preserve its exact bytes.

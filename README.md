@@ -148,9 +148,11 @@ Its SHA-256 exactly matches `qualification_report_sha256` in
 
 `python tools/generate_release.py` verifies selected source hashes and generates
 this README plus `dist/submission_manifest.json`. The manifest records the Git
-revision at generation time. Final video: **pending, not submission complete**.
+revision at generation time. Preferred video: **ATLAS-RC1-submission-candidate.mp4**.
+See the completed [source/video record](docs/SOURCE_VIDEO_CONSISTENCY.md) for
+RAW provenance, unchanged timing and the separate held-frame presentation copy.
 
-The release is not complete until the
+Organizer submission is not complete until the
 [submission-readiness checklist](docs/SUBMISSION_READINESS.md) is satisfied.
 The packaged livery is an unchanged copy of the locally qualified asset; its
 identity is established by IBM competition documentation. IBM explicitly requires
@@ -167,6 +169,6 @@ TORCS simulator and car assets.
 ## Presentation and official footage
 
 [ATLAS artwork and showcase plan](presentation/README.md) use the exact project
-tagline and recorded evidence. The official video will use original track textures;
+tagline and recorded evidence. The verified official capture uses original track textures;
 the branded track copy is separate showcase material. No controller, livery,
 physics, geometry or race configuration was changed for presentation.

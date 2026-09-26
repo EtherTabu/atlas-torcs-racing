@@ -16,14 +16,14 @@ the available evidence and require human confirmation against the official rules
 | Standing start | First sensor: distRaced 0, speed effectively zero; official lap timer used. |
 | Fastest qualified lap | Generated from the selected checkpoint; experimental Frontier laps cannot replace it without qualification. |
 | Timing and GUI qualification | Preserved PASS report; nine identical timing repeats and matching normal GUI trace for RC1. Requalify changed driving/runtime artifacts or a new final candidate. |
-| Official video | **Pending.** Capture a clean normal GUI standing-start run of the selected candidate. A clean capture without engineering overlays is our presentation recommendation, not a verified organizer rule. |
-| Source/video consistency | **Pending video.** Use the frozen [source/video record](SOURCE_VIDEO_CONSISTENCY.md); bind the actual capture to the RC1 hashes. |
-| Final commit/tag and manifest | Packaging history and manifest exist; refresh the manifest after the final packaging commit. Create no final release/tag until video consistency is checked; no claim that historical evidence was recorded from a later Git commit. Bind byte-identical source using hashes. |
+| Official video | **PASS.** `ATLAS-RC1-submission-candidate.mp4`: complete standing start and genuine completion, unchanged 1x timing, full viewport/HUD, no added hold. Small noVNC handle and pointer retained. Preferred organizer-facing video, subject to organizer rules. |
+| Source/video consistency | **PASS.** Completed [source/video record](SOURCE_VIDEO_CONSISTENCY.md) and `evidence/official_video.json` bind exact qualified trajectory, 84.388 s, zero damage and frozen identities. |
+| Final commit/tag and manifest | Video consistency gate passed. Final tag `atlas-rc1-final` binds packaging; the generated release manifest records the actual final commit separately from capture-source commit `3427a92e8604fc14e88c99afb1d47ccb301f3a88`. See release assets for the generated manifest. |
 | License and attribution | Existing source notices retained. Do not apply the code's MIT license to the livery or independently licensed simulator assets. IBM requires livery inclusion for this submission; no broader artwork license is asserted. |
 | Official submission procedure | **Human confirmation required:** deadline, upload destination, video specification and any organizer rules not supplied here. |
 
-Final submission is not complete while the official video, source/video consistency,
-course completion, or organizer-confirmation rows remain pending.
+Final organizer submission remains incomplete pending course completion confirmation,
+organizer requirements confirmation and human upload.
 
 
 | Additional verified IBM requirement | Status |
@@ -44,8 +44,8 @@ present. RC1's car dynamics, track model, Corkscrew standing-start configuration
 all 83 immutable checkpoint files remain unchanged. Final packaging commit is bound
 in the generated distribution manifest after each published packaging change.
 
-Official fastest-lap video and final source/video consistency remain pending.
+Official fastest-lap video and source/video consistency are verified.
 All team members' IBM SkillsBuild course completion remains unverified; no completion
-claim is made. No final release/tag until the video consistency gate is complete.
+claim is made. The video consistency gate is complete.
 The official video uses stock track textures. The separate branded track copy and
 editable artwork are [showcase material](../presentation/README.md), not new lap evidence.

@@ -49,15 +49,33 @@ def main():
     git = subprocess.run(['git','rev-parse','HEAD'],cwd=ROOT,capture_output=True,text=True) if shutil.which('git') else None
     commit = git.stdout.strip() if git is not None and git.returncode == 0 else None
     analysis = checkpoint['analysis']
+    video_path = ROOT/'evidence/official_video.json'
+    video = json.loads(video_path.read_text())
+    if video['status'] != 'PASS' or video['analysis'] != analysis:
+        raise ValueError('Recorded video evidence differs from qualified analysis')
+    for name, expected in video['runtime_source_sha256'].items():
+        if digest(ROOT/name) != expected:
+            raise ValueError('Recorded runtime source differs: '+name)
+    for actual, expected in [(digest(path), video['checkpoint_sha256']),
+                             (digest(report_path), video['qualification_sha256']),
+                             (livery['sha256'], video['livery_sha256'])]:
+        if actual != expected:
+            raise ValueError('Recorded qualification or livery identity differs')
+    candidate = video['submission_candidate']
+    if (not video['installed_assets_match_checkpoint'] or not video['race_matches_qualified_gui']
+            or candidate['playback_speed'] != 1 or candidate['finish_hold_added']
+            or candidate['max_relative_timestamp_deviation_ticks'] != 0):
+        raise ValueError('Video consistency gate failed')
     manifest = dict(version=args.version,source_commit=commit,source_hashes=hashes,
         evidence_checkpoint_sha256=digest(path),qualification_sha256=digest(report_path),
         official_lap_time_s=analysis['lap_time_s'],trajectory_sha256=analysis['trajectory_sha256'],
         track='Corkscrew',driver='scr_server 1',standing_start=checkpoint['standing_start'],
         damage=analysis['damage_increase'],max_abs_trackPos=analysis['max_abs_trackPos'],
         peak_speed_kmh=analysis['max_speed_kmh'],timing_repetitions=report['confirmation_count'],
-        gui_run=checkpoint['gui_run'],livery=livery,video=args.video,
-        submission_ready=False,pending=['Official video and source/video consistency',
-        'Organizer deadline, video format and submission procedure confirmation'],
+        gui_run=checkpoint['gui_run'],livery=livery,video=args.video or candidate['filename'],
+        capture_source_commit=video['capture_source_commit'],official_video=video,
+        official_video_evidence_sha256=digest(video_path),
+        submission_ready=False,pending=video['pending'],
         provenance_note='Historical qualification binds byte-identical runtime sources by hash. The source commit is the packaging revision, not a claim about when the historical run occurred.')
     (ROOT/'dist').mkdir(exist_ok=True)
     (ROOT/'dist/submission_manifest.json').write_text(json.dumps(manifest,indent=2))
@@ -67,6 +85,7 @@ def main():
             table+=f'| {name} | {time:.3f} | {level} |\n'
         hash_table='| Artifact | SHA-256 |\n|---|---|\n'+''.join(f'| `{name}` | `{sha}` |\n' for name,sha in hashes.items() if name in ['atlas_controller.py','atlas_params.json','track_model.json'])
         values=dict(BENCHMARK_TABLE=table,VERSION=args.version,LAP_TIME=f"{analysis['lap_time_s']:.3f}",REPEATS=str(report['confirmation_count']),PEAK_SPEED=f"{analysis['max_speed_kmh']:.3f}",TRACK_POS=f"{analysis['max_abs_trackPos']:.6f}",HASH_TABLE=hash_table,VIDEO=args.video or 'pending, not submission complete')
+        values['VIDEO'] = args.video or candidate['filename']
         content=(ROOT/'README.template.md').read_text()
         for key,value in values.items():content=content.replace('{{'+key+'}}',value)
         if '{{' in content:raise ValueError('Unresolved README field')
